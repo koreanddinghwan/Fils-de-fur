@@ -6,7 +6,7 @@
 /*   By: myukang <myukang@student.42.kr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/27 18:11:05 by myukang           #+#    #+#             */
-/*   Updated: 2022/04/27 21:02:43 by myukang          ###   ########.fr       */
+/*   Updated: 2022/04/28 04:54:23 by myukang          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,17 +21,16 @@ int desl_key(int key, void *param)
 
 void fils_de_fer(char *path)
 {
-	int	fd;
+	t_dlst	*line_list;
 
-	fd = open(path, O_RDONLY);
-	if (errno)
-	{
-		perror(strerror(errno));
-		exit(1);
-	}
+	line_list = 0;
+	get_map_list(path, &line_list);
+	print_list_str(line_list);
+	//1. 맵이 직사각형인지 확인
 
-	close(fd);
-
+	//2. 맵의 인자가 공백으로 나눴을때는 숫자만 있는가
+	//숫자만 있는게 아니면 콤마로 나누어서 왼쪽에 숫자, 오른쪽에 색상인가 확인
+/*
 	void *mlx_ptr;
 	void *win_ptr;
 
@@ -47,5 +46,5 @@ void fils_de_fer(char *path)
 		i++;
 	}
 	mlx_key_hook(win_ptr, desl_key, (void *)0);
-	mlx_loop(mlx_ptr);
+	mlx_loop(mlx_ptr);*/
 }

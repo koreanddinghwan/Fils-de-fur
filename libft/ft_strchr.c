@@ -6,7 +6,7 @@
 /*   By: myukang <myukang@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/09 15:51:12 by myukang           #+#    #+#             */
-/*   Updated: 2022/04/18 15:38:09 by myukang          ###   ########.fr       */
+/*   Updated: 2022/04/28 04:00:42 by myukang          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,23 +14,21 @@
 
 char	*ft_strchr(const char *s, int c)
 {
-	char	*p;
 	t_size	size;
 	t_size	i;
 
-	p = 0;
-	i = 0;
+	if (!s)
+		return (0);
 	size = ft_strlen((char *)s);
-	while (i < size)
+	if (c == 0)
+		return ((char *)(s + size));
+	i = 0;
+	while (s[i])
 	{
 		if (s[i] == (unsigned char)c)
-		{
-			p = (char *)(s + i);
-			return (p);
-		}
+			return ((char *)(s + i));
 		i++;
 	}
-	if ((i == size) && (unsigned char)c == 0)
-		return ((char *)(s + i));
-	return (p);
+	return (0);
+
 }

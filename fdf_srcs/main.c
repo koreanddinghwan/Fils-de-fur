@@ -6,7 +6,7 @@
 /*   By: myukang <myukang@student.42.kr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/27 17:50:11 by myukang           #+#    #+#             */
-/*   Updated: 2022/04/27 22:07:39 by myukang          ###   ########.fr       */
+/*   Updated: 2022/04/28 04:54:25 by myukang          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,10 +18,8 @@ int main(int ac, char **av)
 		call_error_ac();
 	else if (ac == 2)
 	{
-		if (validate_file_name(av[1]))
+		if (validate_file(av[1]))
 			fils_de_fer(av[1]);
-		else
-			
 	}
 	exit(1);
 }

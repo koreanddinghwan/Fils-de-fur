@@ -6,7 +6,7 @@
 #    By: myukang <myukang@student.42.kr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/04/27 18:01:47 by myukang           #+#    #+#              #
-#    Updated: 2022/04/27 22:07:38 by myukang          ###   ########.fr        #
+#    Updated: 2022/04/28 04:54:23 by myukang          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -26,7 +26,7 @@ GNL_OBJS_O = $(GNL_SRCS:.c=.o)
 GNL_OBJS = $(addprefix $(GNL_DIR), $(GNL_OBJS_O))
 
 FDF_DIR = ./fdf_srcs/
-FDF_SRCS = main.c fils_de_fer.c
+FDF_SRCS = main.c fils_de_fer.c get_map_list.c
 FDF_OBJS_O = $(FDF_SRCS:.c=.o)
 FDF_OBJS = $(addprefix $(FDF_DIR), $(FDF_OBJS_O))
 
@@ -35,7 +35,16 @@ TOOLS_SRCS = call_error.c validate_file_name.c free_split.c
 TOOLS_OBJS_O = $(TOOLS_SRCS:.c=.o)
 TOOLS_OBJS = $(addprefix $(TOOLS_DIR), $(TOOLS_OBJS_O))
 
-OBJ_FILES = $(FDF_OBJS) $(GNL_OBJS) $(TOOLS_OBJS)
+T_TOOLS_DIR = ./fdf_srcs/temp_tools/
+T_TOOLS_SRCS = print_any.c
+T_TOOLS_OBJS_O = $(T_TOOLS_SRCS:.c=.o)
+T_TOOLS_OBJS = $(addprefix $(T_TOOLS_DIR), $(T_TOOLS_OBJS_O))
+
+
+
+
+
+OBJ_FILES = $(FDF_OBJS) $(GNL_OBJS) $(TOOLS_OBJS) $(T_TOOLS_OBJS)
 
 all : $(NAME)
 
