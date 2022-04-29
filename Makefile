@@ -6,7 +6,7 @@
 #    By: myukang <myukang@student.42.kr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/04/27 18:01:47 by myukang           #+#    #+#              #
-#    Updated: 2022/04/28 04:54:23 by myukang          ###   ########.fr        #
+#    Updated: 2022/04/29 14:19:45 by myukang          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -64,7 +64,7 @@ fclean : clean
 clean :
 	make fclean -C $(LIBFT_DIR)
 	make clean -C $(MLX_DIR)
-	rm -f $(OBJS_FILES) $(LIBFT)
+	rm -f $(OBJS_FILES) $(LIBFT) $(MLX)
 
 re : fclean all
 
