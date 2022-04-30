@@ -1,39 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   validate_file_name.c                               :+:      :+:    :+:   */
+/*   get_map_list.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: myukang <myukang@student.42.kr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/04/27 20:50:27 by myukang           #+#    #+#             */
-/*   Updated: 2022/04/28 02:32:20 by myukang          ###   ########.fr       */
+/*   Created: 2022/04/28 04:37:56 by myukang           #+#    #+#             */
+/*   Updated: 2022/04/30 20:48:54 by myukang          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../includes/fdf.h"
 
-static int	validate_file_name(char *path)
+void	get_map_list(char	*path, t_dlst **line_list)
 {
-	char	**splited;
-	int		i;
-
-	splited = ft_split(path, '.');
-	i = 0;
-	while (splited[i])
-		i++;
-	i--;
-	if (ft_strncmp("fdf", splited[i], ft_strlen(splited[i])))
+	int		fd;
+	char	*line;
+	
+	fd = open(path, O_RDONLY);
+	if (fd == -1)
 	{
-		free_split(splited);
-		return (0);
+		perror("Please check map path");
+		exit(1);
 	}
-	free_split(splited);
-	return (1);
-}
-
-int	validate_file(char *path)
-{
-	if (!validate_file_name(path))
-		call_error_map();
-	return (1);
+	line = get_next_line(fd);
+	while (line)
+	{
+		ft_dlst_pushback(line_list, ft_dlst_new(line));
+		line = get_next_line(fd);
+	}
+	close(fd);
 }

@@ -6,7 +6,7 @@
 #    By: myukang <myukang@student.42.kr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/04/27 18:01:47 by myukang           #+#    #+#              #
-#    Updated: 2022/04/29 14:19:45 by myukang          ###   ########.fr        #
+#    Updated: 2022/04/30 21:58:44 by myukang          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -26,12 +26,12 @@ GNL_OBJS_O = $(GNL_SRCS:.c=.o)
 GNL_OBJS = $(addprefix $(GNL_DIR), $(GNL_OBJS_O))
 
 FDF_DIR = ./fdf_srcs/
-FDF_SRCS = main.c fils_de_fer.c get_map_list.c
+FDF_SRCS = main.c fils_de_fer.c 
 FDF_OBJS_O = $(FDF_SRCS:.c=.o)
 FDF_OBJS = $(addprefix $(FDF_DIR), $(FDF_OBJS_O))
 
 TOOLS_DIR = ./fdf_srcs/tools/
-TOOLS_SRCS = call_error.c validate_file_name.c free_split.c
+TOOLS_SRCS = call_error.c free_split.c get_map_list.c
 TOOLS_OBJS_O = $(TOOLS_SRCS:.c=.o)
 TOOLS_OBJS = $(addprefix $(TOOLS_DIR), $(TOOLS_OBJS_O))
 
@@ -40,11 +40,12 @@ T_TOOLS_SRCS = print_any.c
 T_TOOLS_OBJS_O = $(T_TOOLS_SRCS:.c=.o)
 T_TOOLS_OBJS = $(addprefix $(T_TOOLS_DIR), $(T_TOOLS_OBJS_O))
 
+MAP_CHECK_DIR = ./fdf_srcs/map_check_module/
+MAP_CHECK_SRCS = extension_check_module.c square_check_module.c
+MAP_CHECK_OBJS_O = $(MAP_CHECK_SRCS:.c=.o)
+MAP_CHECK_OBJS = $(addprefix $(MAP_CHECK_DIR), $(MAP_CHECK_OBJS_O))
 
-
-
-
-OBJ_FILES = $(FDF_OBJS) $(GNL_OBJS) $(TOOLS_OBJS) $(T_TOOLS_OBJS)
+OBJ_FILES = $(FDF_OBJS) $(GNL_OBJS) $(TOOLS_OBJS) $(T_TOOLS_OBJS) $(MAP_CHECK_OBJS)
 
 all : $(NAME)
 
