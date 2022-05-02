@@ -111,7 +111,7 @@ MLX_MAX_EVENT	officialsrcs/minilibx3/mlx_int.h	/^#define	MLX_MAX_EVENT	/;"	d
 MLX_MOD_DIR	Makefile	/^MLX_MOD_DIR = .\/fdf_srcs\/mlx_module\/$/;"	m
 MLX_MOD_OBJS	Makefile	/^MLX_MOD_OBJS = $(addprefix $(MLX_MOD_DIR), $(MLX_MOD_OBJS_O))$/;"	m
 MLX_MOD_OBJS_O	Makefile	/^MLX_MOD_OBJS_O = $(MLX_MOD_SRCS:.c=.o)$/;"	m
-MLX_MOD_SRCS	Makefile	/^MLX_MOD_SRCS = mod_mlx.c$/;"	m
+MLX_MOD_SRCS	Makefile	/^MLX_MOD_SRCS = mod_mlx.c bresenham_pixel_put.c$/;"	m
 MLX_TYPE_SHM	officialsrcs/minilibx/mlx_int.h	/^#define	MLX_TYPE_SHM	/;"	d
 MLX_TYPE_SHM	officialsrcs/minilibx3/mlx_int.h	/^#define	MLX_TYPE_SHM	/;"	d
 MLX_TYPE_SHM_PIXMAP	officialsrcs/minilibx/mlx_int.h	/^#define	MLX_TYPE_SHM_PIXMAP	/;"	d
@@ -198,8 +198,8 @@ bpp3	officialsrcs/minilibx3/test/main.c	/^int	bpp3;$/;"	v
 bpp4	officialsrcs/minilibx/test/main.c	/^int	bpp4;$/;"	v
 bpp4	officialsrcs/minilibx3/test/main.c	/^int	bpp4;$/;"	v
 bresenham_pixel_put	fdf_srcs/mlx_module/bresenham_pixel_put.c	/^void	bresenham_pixel_put(t_pixel *p1, t_pixel *p2, t_mlx *mlx)$/;"	f
-bytes_per_pixel	mlx/font.c	/^  unsigned int 	 bytes_per_pixel; \/* 2:RGB16, 3:RGB, 4:RGBA *\/ $/;"	m	struct:__anon2	file:
-bytes_per_pixel	officialsrcs/minilibx2/font.c	/^  unsigned int 	 bytes_per_pixel; \/* 2:RGB16, 3:RGB, 4:RGBA *\/ $/;"	m	struct:__anon1	file:
+bytes_per_pixel	mlx/font.c	/^  unsigned int 	 bytes_per_pixel; \/* 2:RGB16, 3:RGB, 4:RGBA *\/ $/;"	m	struct:__anon1	file:
+bytes_per_pixel	officialsrcs/minilibx2/font.c	/^  unsigned int 	 bytes_per_pixel; \/* 2:RGB16, 3:RGB, 4:RGBA *\/ $/;"	m	struct:__anon2	file:
 cal_size	libft/ft_split_charset.c	/^int	cal_size(char *str, char *charset)$/;"	f
 call_error	fdf_srcs/tools/call_error.c	/^void	call_error(char	*str)$/;"	f
 call_error_free_list	fdf_srcs/tools/call_error.c	/^void	call_error_free_list(char *str, t_dlst **pixel_list)$/;"	f
@@ -267,8 +267,8 @@ expose_win2	officialsrcs/minilibx3/test/main.c	/^int	expose_win2(void *p)$/;"	f
 extension_check_module	fdf_srcs/map_check_module/extension_check_module.c	/^int	extension_check_module(char *path)$/;"	f
 fils_de_fer	fdf_srcs/fils_de_fer.c	/^void fils_de_fer(char *path)$/;"	f
 find_hex_str	fdf_srcs/pixel_module/pixel_color_parser.c	/^static int	find_hex_str(char c)$/;"	f	file:
-font_atlas	mlx/font.c	/^} font_atlas = {$/;"	v	typeref:struct:__anon2	file:
-font_atlas	officialsrcs/minilibx2/font.c	/^} font_atlas = {$/;"	v	typeref:struct:__anon1	file:
+font_atlas	mlx/font.c	/^} font_atlas = {$/;"	v	typeref:struct:__anon1	file:
+font_atlas	officialsrcs/minilibx2/font.c	/^} font_atlas = {$/;"	v	typeref:struct:__anon2	file:
 format	officialsrcs/minilibx/mlx_int.h	/^  int		format;$/;"	m	struct:s_img
 format	officialsrcs/minilibx3/mlx_int.h	/^  int		format;$/;"	m	struct:s_img
 free_split	fdf_srcs/tools/free_split.c	/^void	free_split(char	**splited)$/;"	f
@@ -360,10 +360,10 @@ get_next_line	gnl/get_next_line.c	/^char	*get_next_line(int fd)$/;"	f
 get_num	fdf_srcs/map_check_module/square_check_module.c	/^static int	get_num(t_dlst	*line_list)$/;"	f	file:
 get_x	fdf_srcs/tools/cal_coordinate.c	/^double	get_x(int x, int y, int angle)$/;"	f
 get_y	fdf_srcs/tools/cal_coordinate.c	/^int	get_y(int x, int y, int z)$/;"	f
-height	mlx/font.c	/^  unsigned int 	 height;$/;"	m	struct:__anon2	file:
+height	mlx/font.c	/^  unsigned int 	 height;$/;"	m	struct:__anon1	file:
 height	mlx/mlx_png.c	/^  unsigned int	height;$/;"	m	struct:png_info_s	file:
 height	officialsrcs/minilibx/mlx_int.h	/^  int		height;$/;"	m	struct:s_img
-height	officialsrcs/minilibx2/font.c	/^  unsigned int 	 height;$/;"	m	struct:__anon1	file:
+height	officialsrcs/minilibx2/font.c	/^  unsigned int 	 height;$/;"	m	struct:__anon2	file:
 height	officialsrcs/minilibx2/mlx_png.c	/^  unsigned int	height;$/;"	m	struct:png_info_s	file:
 height	officialsrcs/minilibx3/mlx_int.h	/^  int		height;$/;"	m	struct:s_img
 hook	officialsrcs/minilibx/mlx_int.h	/^  int		(*hook)();$/;"	m	struct:s_event_list
@@ -626,8 +626,8 @@ pix	officialsrcs/minilibx/mlx_int.h	/^  Pixmap	pix;$/;"	m	struct:s_img
 pix	officialsrcs/minilibx3/mlx_int.h	/^  Pixmap	pix;$/;"	m	struct:s_img
 pixel_color_parser	fdf_srcs/pixel_module/pixel_color_parser.c	/^int	pixel_color_parser(char *str)$/;"	f
 pixel_correction	fdf_srcs/pixel_module/pixel_correction.c	/^void	pixel_correction(t_dlst **pixel_list)$/;"	f
-pixel_data	mlx/font.c	/^  unsigned char	 pixel_data[1140 * 20 * 4 + 1];$/;"	m	struct:__anon2	file:
-pixel_data	officialsrcs/minilibx2/font.c	/^  unsigned char	 pixel_data[1140 * 20 * 4 + 1];$/;"	m	struct:__anon1	file:
+pixel_data	mlx/font.c	/^  unsigned char	 pixel_data[1140 * 20 * 4 + 1];$/;"	m	struct:__anon1	file:
+pixel_data	officialsrcs/minilibx2/font.c	/^  unsigned char	 pixel_data[1140 * 20 * 4 + 1];$/;"	m	struct:__anon2	file:
 pixel_list	includes/fdf.h	/^	t_dlst	**pixel_list;$/;"	m	struct:s_mlx
 png_info_s	mlx/mlx_png.c	/^typedef struct png_info_s$/;"	s	file:
 png_info_s	officialsrcs/minilibx2/mlx_png.c	/^typedef struct png_info_s$/;"	s	file:
@@ -706,10 +706,10 @@ use_xshm	officialsrcs/minilibx3/mlx_int.h	/^  int		use_xshm;$/;"	m	struct:s_xvar
 validate_file_extension	fdf_srcs/map_check_module/extension_check_module.c	/^static int	validate_file_extension(char *path)$/;"	f	file:
 visual	officialsrcs/minilibx/mlx_int.h	/^  Visual	*visual;$/;"	m	struct:s_xvar
 visual	officialsrcs/minilibx3/mlx_int.h	/^  Visual	*visual;$/;"	m	struct:s_xvar
-width	mlx/font.c	/^  unsigned int 	 width;$/;"	m	struct:__anon2	file:
+width	mlx/font.c	/^  unsigned int 	 width;$/;"	m	struct:__anon1	file:
 width	mlx/mlx_png.c	/^  unsigned int	width;$/;"	m	struct:png_info_s	file:
 width	officialsrcs/minilibx/mlx_int.h	/^  int		width;$/;"	m	struct:s_img
-width	officialsrcs/minilibx2/font.c	/^  unsigned int 	 width;$/;"	m	struct:__anon1	file:
+width	officialsrcs/minilibx2/font.c	/^  unsigned int 	 width;$/;"	m	struct:__anon2	file:
 width	officialsrcs/minilibx2/mlx_png.c	/^  unsigned int	width;$/;"	m	struct:png_info_s	file:
 width	officialsrcs/minilibx3/mlx_int.h	/^  int		width;$/;"	m	struct:s_img
 win1	officialsrcs/minilibx/test/main.c	/^void	*win1;$/;"	v

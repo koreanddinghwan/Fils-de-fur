@@ -6,7 +6,7 @@
 #    By: myukang <myukang@student.42.kr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/04/27 18:01:47 by myukang           #+#    #+#              #
-#    Updated: 2022/05/02 00:59:12 by myukang          ###   ########.fr        #
+#    Updated: 2022/05/02 18:22:40 by myukang          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -33,7 +33,7 @@ FDF_OBJS_O = $(FDF_SRCS:.c=.o)
 FDF_OBJS = $(addprefix $(FDF_DIR), $(FDF_OBJS_O))
 
 TOOLS_DIR = ./fdf_srcs/tools/
-TOOLS_SRCS = call_error.c free_split.c get_map_list.c cal_coordinate.c ft_round.c
+TOOLS_SRCS = call_error.c free_split.c get_map_list.c cal_coordinate.c
 TOOLS_OBJS_O = $(TOOLS_SRCS:.c=.o)
 TOOLS_OBJS = $(addprefix $(TOOLS_DIR), $(TOOLS_OBJS_O))
 
@@ -53,7 +53,7 @@ PIXEL_MOD_OBJS_O = $(PIXEL_MOD_SRCS:.c=.o)
 PIXEL_MOD_OBJS = $(addprefix $(PIXEL_MOD_DIR), $(PIXEL_MOD_OBJS_O))
 
 MLX_MOD_DIR = ./fdf_srcs/mlx_module/
-MLX_MOD_SRCS = mod_mlx.c bresenham_pixel_put.c
+MLX_MOD_SRCS = mod_mlx.c open_window.c pixel_print.c bresenham_pixel_put_pos.c bresenham_pixel_put_neg.c
 MLX_MOD_OBJS_O = $(MLX_MOD_SRCS:.c=.o)
 MLX_MOD_OBJS = $(addprefix $(MLX_MOD_DIR), $(MLX_MOD_OBJS_O))
 
