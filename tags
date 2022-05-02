@@ -4,146 +4,273 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
+ARCH	Makefile	/^ARCH = arch -x86_64$/;"	m
+ARCH	libft/Makefile	/^ARCH = arch -x86_64$/;"	m
+ATLAS_NB_CHAR	mlx/mlx_string_put.c	/^#define ATLAS_NB_CHAR /;"	d	file:
+ATLAS_NB_CHAR	officialsrcs/minilibx2/mlx_string_put.c	/^#define ATLAS_NB_CHAR /;"	d	file:
 BUFFER_SIZE	includes/get_next_line.h	/^#  define BUFFER_SIZE /;"	d
 CC	libft/Makefile	/^CC = gcc$/;"	m
 CC	officialsrcs/minilibx/Makefile.mk	/^CC	= gcc$/;"	m
 CC	officialsrcs/minilibx/test/Makefile.mk	/^CC=gcc$/;"	m
+CC	officialsrcs/minilibx3/Makefile.mk	/^CC	= gcc$/;"	m
+CC	officialsrcs/minilibx3/test/Makefile.mk	/^CC=gcc$/;"	m
 CFLAGS	Makefile	/^CFLAGS = -Wall -Wextra -Werror -c -g -fsanitize=address$/;"	m
 CFLAGS	libft/Makefile	/^CFLAGS = -Wall -Wextra -Werror -c$/;"	m
 CFLAGS	officialsrcs/minilibx/Makefile.mk	/^CFLAGS	= -O3 -I$(INC)$/;"	m
 CFLAGS	officialsrcs/minilibx/test/Makefile.mk	/^CFLAGS= -I$(INC) -O3 -I..$/;"	m
+CFLAGS	officialsrcs/minilibx3/Makefile.mk	/^CFLAGS	= -O3 -I$(INC)$/;"	m
+CFLAGS	officialsrcs/minilibx3/test/Makefile.mk	/^CFLAGS= -I$(INC) -O3 -I..$/;"	m
+C_OBJ	mlx/Makefile	/^C_OBJ=$(C_SRC:.c=.o)$/;"	m
+C_OBJ	officialsrcs/minilibx2/Makefile	/^C_OBJ=$(C_SRC:.c=.o)$/;"	m
+C_SRC	mlx/Makefile	/^C_SRC= mlx_xpm.c mlx_png.c mlx_string_put.c$/;"	m
+C_SRC	officialsrcs/minilibx2/Makefile	/^C_SRC= mlx_xpm.c mlx_png.c mlx_string_put.c$/;"	m
 DEFAULT_COLOR	includes/fdf.h	/^# define	DEFAULT_COLOR	/;"	d
 DEFAULT_WINDOW_X	includes/fdf.h	/^# define	DEFAULT_WINDOW_X	/;"	d
 DEFAULT_WINDOW_Y	includes/fdf.h	/^# define	DEFAULT_WINDOW_Y	/;"	d
 DEFAULT_Z_PIXEL_PER_LEN	includes/fdf.h	/^# define	DEFAULT_Z_PIXEL_PER_LEN	/;"	d
 DOCP	officialsrcs/minilibx/Makefile.mk	/^DOCP	=%%%%$/;"	m
+DOCP	officialsrcs/minilibx3/Makefile.mk	/^DOCP	=%%%%$/;"	m
 ENV_DISPLAY	officialsrcs/minilibx/mlx_int.h	/^#define	ENV_DISPLAY	/;"	d
+ENV_DISPLAY	officialsrcs/minilibx3/mlx_int.h	/^#define	ENV_DISPLAY	/;"	d
+ERR_DATA_FILTER	mlx/mlx_png.c	/^#define	ERR_DATA_FILTER	/;"	d	file:
+ERR_DATA_FILTER	officialsrcs/minilibx2/mlx_png.c	/^#define	ERR_DATA_FILTER	/;"	d	file:
+ERR_DATA_MISMATCH	mlx/mlx_png.c	/^#define	ERR_DATA_MISMATCH	/;"	d	file:
+ERR_DATA_MISMATCH	officialsrcs/minilibx2/mlx_png.c	/^#define	ERR_DATA_MISMATCH	/;"	d	file:
+ERR_MAGIC_SIZE	mlx/mlx_png.c	/^#define	ERR_MAGIC_SIZE	/;"	d	file:
+ERR_MAGIC_SIZE	officialsrcs/minilibx2/mlx_png.c	/^#define	ERR_MAGIC_SIZE	/;"	d	file:
+ERR_MAGIC_WRONG	mlx/mlx_png.c	/^#define	ERR_MAGIC_WRONG	/;"	d	file:
+ERR_MAGIC_WRONG	officialsrcs/minilibx2/mlx_png.c	/^#define	ERR_MAGIC_WRONG	/;"	d	file:
 ERR_NO_TRUECOLOR	officialsrcs/minilibx/mlx_int.h	/^#define	ERR_NO_TRUECOLOR	/;"	d
+ERR_NO_TRUECOLOR	officialsrcs/minilibx3/mlx_int.h	/^#define	ERR_NO_TRUECOLOR	/;"	d
+ERR_STRUCT_CRC	mlx/mlx_png.c	/^#define	ERR_STRUCT_CRC	/;"	d	file:
+ERR_STRUCT_CRC	officialsrcs/minilibx2/mlx_png.c	/^#define	ERR_STRUCT_CRC	/;"	d	file:
+ERR_STRUCT_DAT	mlx/mlx_png.c	/^#define	ERR_STRUCT_DAT	/;"	d	file:
+ERR_STRUCT_DAT	officialsrcs/minilibx2/mlx_png.c	/^#define	ERR_STRUCT_DAT	/;"	d	file:
+ERR_STRUCT_END	mlx/mlx_png.c	/^#define	ERR_STRUCT_END	/;"	d	file:
+ERR_STRUCT_END	officialsrcs/minilibx2/mlx_png.c	/^#define	ERR_STRUCT_END	/;"	d	file:
+ERR_STRUCT_HDR	mlx/mlx_png.c	/^#define	ERR_STRUCT_HDR	/;"	d	file:
+ERR_STRUCT_HDR	officialsrcs/minilibx2/mlx_png.c	/^#define	ERR_STRUCT_HDR	/;"	d	file:
+ERR_STRUCT_INCIMPL	mlx/mlx_png.c	/^#define	ERR_STRUCT_INCIMPL /;"	d	file:
+ERR_STRUCT_INCIMPL	officialsrcs/minilibx2/mlx_png.c	/^#define	ERR_STRUCT_INCIMPL /;"	d	file:
+ERR_STRUCT_INCOMPLETE	mlx/mlx_png.c	/^#define	ERR_STRUCT_INCOMPLETE	/;"	d	file:
+ERR_STRUCT_INCOMPLETE	officialsrcs/minilibx2/mlx_png.c	/^#define	ERR_STRUCT_INCOMPLETE	/;"	d	file:
+ERR_STRUCT_MISSCHK	mlx/mlx_png.c	/^#define	ERR_STRUCT_MISSCHK	/;"	d	file:
+ERR_STRUCT_MISSCHK	officialsrcs/minilibx2/mlx_png.c	/^#define	ERR_STRUCT_MISSCHK	/;"	d	file:
+ERR_ZLIB	mlx/mlx_png.c	/^#define	ERR_ZLIB	/;"	d	file:
+ERR_ZLIB	officialsrcs/minilibx2/mlx_png.c	/^#define	ERR_ZLIB	/;"	d	file:
 FDF_DIR	Makefile	/^FDF_DIR = .\/fdf_srcs\/$/;"	m
 FDF_H	includes/fdf.h	/^# define FDF_H$/;"	d
 FDF_OBJS	Makefile	/^FDF_OBJS = $(addprefix $(FDF_DIR), $(FDF_OBJS_O))$/;"	m
 FDF_OBJS_O	Makefile	/^FDF_OBJS_O = $(FDF_SRCS:.c=.o)$/;"	m
 FDF_SRCS	Makefile	/^FDF_SRCS = main.c fils_de_fer.c $/;"	m
-FONT_HEIGHT	minilibx/mlx_int.h	/^#define	FONT_HEIGHT	/;"	d
-FONT_WIDTH	minilibx/mlx_int.h	/^#define FONT_WIDTH	/;"	d
+FONT_WIDTH	mlx/mlx_string_put.c	/^#define FONT_WIDTH	/;"	d	file:
+FONT_WIDTH	officialsrcs/minilibx2/mlx_string_put.c	/^#define FONT_WIDTH	/;"	d	file:
 GCC	Makefile	/^GCC = gcc$/;"	m
 GET_NEXT_LINE_H	includes/get_next_line.h	/^# define GET_NEXT_LINE_H$/;"	d
-GFLAGS	Makefile	/^GFLAGS = -I \/usr\/local\/include -L \/usr\/local\/lib -lmlx -framework OpenGL -framework Appkit$/;"	m
+GFLAGS	Makefile	/^GFLAGS = -I. -Lmlx -framework Metal -framework Metalkit$/;"	m
 GNL_DIR	Makefile	/^GNL_DIR = .\/gnl\/$/;"	m
 GNL_OBJS	Makefile	/^GNL_OBJS = $(addprefix $(GNL_DIR), $(GNL_OBJS_O))$/;"	m
 GNL_OBJS_O	Makefile	/^GNL_OBJS_O = $(GNL_SRCS:.c=.o)$/;"	m
 GNL_SRCS	Makefile	/^GNL_SRCS = get_next_line.c get_next_line_utils.c$/;"	m
 HT	officialsrcs/minilibx/Makefile.mk	/^HT	=%%%%$/;"	m
+HT	officialsrcs/minilibx3/Makefile.mk	/^HT	=%%%%$/;"	m
 IM1_SX	officialsrcs/minilibx/test/main.c	/^#define	IM1_SX	/;"	d	file:
+IM1_SX	officialsrcs/minilibx3/test/main.c	/^#define	IM1_SX	/;"	d	file:
 IM1_SY	officialsrcs/minilibx/test/main.c	/^#define	IM1_SY	/;"	d	file:
+IM1_SY	officialsrcs/minilibx3/test/main.c	/^#define	IM1_SY	/;"	d	file:
 IM3_SX	officialsrcs/minilibx/test/main.c	/^#define	IM3_SX	/;"	d	file:
+IM3_SX	officialsrcs/minilibx3/test/main.c	/^#define	IM3_SX	/;"	d	file:
 IM3_SY	officialsrcs/minilibx/test/main.c	/^#define	IM3_SY	/;"	d	file:
+IM3_SY	officialsrcs/minilibx3/test/main.c	/^#define	IM3_SY	/;"	d	file:
+INC	Makefile	/^INC = .\/includes\/$/;"	m
+INC	mlx/Makefile	/^INC=-I.$/;"	m
 INC	officialsrcs/minilibx/Makefile.mk	/^INC	=%%%%$/;"	m
 INC	officialsrcs/minilibx/test/Makefile.mk	/^INC=%%%%$/;"	m
+INC	officialsrcs/minilibx2/Makefile	/^INC=-I.$/;"	m
+INC	officialsrcs/minilibx3/Makefile.mk	/^INC	=%%%%$/;"	m
+INC	officialsrcs/minilibx3/test/Makefile.mk	/^INC=%%%%$/;"	m
 INCLIB	officialsrcs/minilibx/test/Makefile.mk	/^INCLIB=$(INC)\/..\/lib$/;"	m
+INCLIB	officialsrcs/minilibx3/test/Makefile.mk	/^INCLIB=$(INC)\/..\/lib$/;"	m
 LIBFT	Makefile	/^LIBFT = libft.a$/;"	m
 LIBFT_DIR	Makefile	/^LIBFT_DIR = .\/libft\/$/;"	m
 LIBFT_H	libft/libft.h	/^# define  LIBFT_H$/;"	d
 LOCALHOST	officialsrcs/minilibx/mlx_int.h	/^#define	LOCALHOST	/;"	d
+LOCALHOST	officialsrcs/minilibx3/mlx_int.h	/^#define	LOCALHOST	/;"	d
 MAP_CHECK_DIR	Makefile	/^MAP_CHECK_DIR = .\/fdf_srcs\/map_check_module\/$/;"	m
 MAP_CHECK_OBJS	Makefile	/^MAP_CHECK_OBJS = $(addprefix $(MAP_CHECK_DIR), $(MAP_CHECK_OBJS_O))$/;"	m
 MAP_CHECK_OBJS_O	Makefile	/^MAP_CHECK_OBJS_O = $(MAP_CHECK_SRCS:.c=.o)$/;"	m
 MAP_CHECK_SRCS	Makefile	/^MAP_CHECK_SRCS = extension_check_module.c square_check_module.c$/;"	m
-MAX_EVENT	minilibx/mlx_int.h	/^#define	MAX_EVENT	/;"	d
-MAX_PIXEL_NB	minilibx/mlx_int.h	/^#define MAX_PIXEL_NB	/;"	d
-MLX	Makefile	/^MLX = libmlx.a$/;"	m
-MLX_DIR	Makefile	/^MLX_DIR = .\/minilibx\/$/;"	m
-MLX_H	minilibx/mlx.h	/^#define	MLX_H$/;"	d
+MLX	Makefile	/^MLX = libmlx.dylib$/;"	m
+MLX_DIR	Makefile	/^MLX_DIR = .\/mlx\/$/;"	m
+MLX_H	mlx/mlx.h	/^#define	MLX_H$/;"	d
 MLX_H	officialsrcs/minilibx/mlx.h	/^#define	MLX_H$/;"	d
+MLX_H	officialsrcs/minilibx2/mlx.h	/^#define	MLX_H$/;"	d
+MLX_H	officialsrcs/minilibx3/mlx.h	/^#define	MLX_H$/;"	d
 MLX_MAX_EVENT	officialsrcs/minilibx/mlx_int.h	/^#define	MLX_MAX_EVENT	/;"	d
+MLX_MAX_EVENT	officialsrcs/minilibx3/mlx_int.h	/^#define	MLX_MAX_EVENT	/;"	d
+MLX_MOD_DIR	Makefile	/^MLX_MOD_DIR = .\/fdf_srcs\/mlx_module\/$/;"	m
+MLX_MOD_OBJS	Makefile	/^MLX_MOD_OBJS = $(addprefix $(MLX_MOD_DIR), $(MLX_MOD_OBJS_O))$/;"	m
+MLX_MOD_OBJS_O	Makefile	/^MLX_MOD_OBJS_O = $(MLX_MOD_SRCS:.c=.o)$/;"	m
+MLX_MOD_SRCS	Makefile	/^MLX_MOD_SRCS = mod_mlx.c$/;"	m
 MLX_TYPE_SHM	officialsrcs/minilibx/mlx_int.h	/^#define	MLX_TYPE_SHM	/;"	d
+MLX_TYPE_SHM	officialsrcs/minilibx3/mlx_int.h	/^#define	MLX_TYPE_SHM	/;"	d
 MLX_TYPE_SHM_PIXMAP	officialsrcs/minilibx/mlx_int.h	/^#define	MLX_TYPE_SHM_PIXMAP	/;"	d
+MLX_TYPE_SHM_PIXMAP	officialsrcs/minilibx3/mlx_int.h	/^#define	MLX_TYPE_SHM_PIXMAP	/;"	d
 MLX_TYPE_XIMAGE	officialsrcs/minilibx/mlx_int.h	/^#define	MLX_TYPE_XIMAGE	/;"	d
+MLX_TYPE_XIMAGE	officialsrcs/minilibx3/mlx_int.h	/^#define	MLX_TYPE_XIMAGE	/;"	d
+MODULE_OBJ	mlx/Makefile	/^MODULE_OBJ=$(MODULE_SRC:.swift=.swiftmodule)$/;"	m
+MODULE_OBJ	officialsrcs/minilibx2/Makefile	/^MODULE_OBJ=$(MODULE_SRC:.swift=.swiftmodule)$/;"	m
+MODULE_SRC	mlx/Makefile	/^MODULE_SRC= mlx_image.swift mlx_window.swift mlx_init.swift$/;"	m
+MODULE_SRC	officialsrcs/minilibx2/Makefile	/^MODULE_SRC= mlx_image.swift mlx_window.swift mlx_init.swift$/;"	m
 NAME	Makefile	/^NAME = fdf$/;"	m
 NAME	libft/Makefile	/^NAME = libft.a$/;"	m
+NAME	mlx/Makefile	/^NAME=libmlx.dylib$/;"	m
 NAME	officialsrcs/minilibx/Makefile.mk	/^NAME	= libmlx.a$/;"	m
 NAME	officialsrcs/minilibx/test/Makefile.mk	/^NAME= mlx-test$/;"	m
-NOM	minilibx/Makefile	/^NOM=libmlx.a$/;"	m
-OBJ	minilibx/Makefile	/^OBJ=$(OBJ1:.m=.o)$/;"	m
+NAME	officialsrcs/minilibx2/Makefile	/^NAME=libmlx.dylib$/;"	m
+NAME	officialsrcs/minilibx3/Makefile.mk	/^NAME	= libmlx.a$/;"	m
+NAME	officialsrcs/minilibx3/test/Makefile.mk	/^NAME= mlx-test$/;"	m
+OBJ	mlx/Makefile	/^OBJ=$(SRC:.swift=.o)$/;"	m
 OBJ	officialsrcs/minilibx/Makefile.mk	/^OBJ	=$(SRC:.c=.o)$/;"	m
 OBJ	officialsrcs/minilibx/test/Makefile.mk	/^OBJ = $(SRC:.c=.o)$/;"	m
-OBJ1	minilibx/Makefile	/^OBJ1=$(SRC:.c=.o)$/;"	m
+OBJ	officialsrcs/minilibx2/Makefile	/^OBJ=$(SRC:.swift=.o)$/;"	m
+OBJ	officialsrcs/minilibx3/Makefile.mk	/^OBJ	=$(SRC:.c=.o)$/;"	m
+OBJ	officialsrcs/minilibx3/test/Makefile.mk	/^OBJ = $(SRC:.c=.o)$/;"	m
 OBJS	libft/Makefile	/^OBJS = $(SRCS:.c=.o)$/;"	m
-OBJ_FILES	Makefile	/^OBJ_FILES = $(FDF_OBJS) $(GNL_OBJS) $(TOOLS_OBJS) $(T_TOOLS_OBJS) $(MAP_CHECK_OBJS)$/;"	m
+OBJ_FILES	Makefile	/^OBJ_FILES = $(FDF_OBJS) $(GNL_OBJS) $(TOOLS_OBJS) $(T_TOOLS_OBJS) $(MAP_CHECK_OBJS) $(PIXEL_MOD_OBJS) $(MLX_MOD_OBJS)$/;"	m
 OBJ_FILES	libft/Makefile	/^OBJ_FILES = $(OBJS)$/;"	m
 OPEN_MAX	includes/get_next_line.h	/^# define OPEN_MAX /;"	d
-RETURN	minilibx/mlx_xpm.c	/^#define	RETURN	/;"	d	file:
+PIXEL_MOD_DIR	Makefile	/^PIXEL_MOD_DIR = .\/fdf_srcs\/pixel_module\/$/;"	m
+PIXEL_MOD_OBJS	Makefile	/^PIXEL_MOD_OBJS = $(addprefix $(PIXEL_MOD_DIR), $(PIXEL_MOD_OBJS_O))$/;"	m
+PIXEL_MOD_OBJS_O	Makefile	/^PIXEL_MOD_OBJS_O = $(PIXEL_MOD_SRCS:.c=.o)$/;"	m
+PIXEL_MOD_SRCS	Makefile	/^PIXEL_MOD_SRCS = pixel_init.c pixel_color_parser.c pixel_correction.c$/;"	m
+PNG_HDR_SIZE	mlx/mlx_png.c	/^#define PNG_HDR_SIZE	/;"	d	file:
+PNG_HDR_SIZE	officialsrcs/minilibx2/mlx_png.c	/^#define PNG_HDR_SIZE	/;"	d	file:
+PNG_MAGIC_SIZE	mlx/mlx_png.c	/^#define	PNG_MAGIC_SIZE	/;"	d	file:
+PNG_MAGIC_SIZE	officialsrcs/minilibx2/mlx_png.c	/^#define	PNG_MAGIC_SIZE	/;"	d	file:
+RETURN	mlx/mlx_xpm.c	/^#define	RETURN	/;"	d	file:
 RETURN	officialsrcs/minilibx/mlx_xpm.c	/^#define	RETURN	/;"	d	file:
-SRC	minilibx/Makefile	/^SRC= mlx_shaders.c mlx_new_window.m mlx_init_loop.m mlx_new_image.m mlx_xpm.c mlx_int_str_to_wordtab.c$/;"	m
+RETURN	officialsrcs/minilibx2/mlx_xpm.c	/^#define	RETURN	/;"	d	file:
+RETURN	officialsrcs/minilibx3/mlx_xpm.c	/^#define	RETURN	/;"	d	file:
+SRC	mlx/Makefile	/^SRC= interface.swift $(MODULE_SRC)$/;"	m
 SRC	officialsrcs/minilibx/Makefile.mk	/^SRC	= mlx_init.c mlx_new_window.c mlx_pixel_put.c mlx_loop.c \\$/;"	m
 SRC	officialsrcs/minilibx/test/Makefile.mk	/^SRC = main.c$/;"	m
-SRCS	libft/Makefile	/^SRCS = ft_isdigit.c ft_isalpha.c ft_isalnum.c ft_isascii.c ft_strlen.c \\$/;"	m
+SRC	officialsrcs/minilibx2/Makefile	/^SRC= interface.swift $(MODULE_SRC)$/;"	m
+SRC	officialsrcs/minilibx3/Makefile.mk	/^SRC	= mlx_init.c mlx_new_window.c mlx_pixel_put.c mlx_loop.c \\$/;"	m
+SRC	officialsrcs/minilibx3/test/Makefile.mk	/^SRC = main.c$/;"	m
+SRCS	libft/Makefile	/^SRCS = ft_isspace.c ft_isdigit.c ft_isalpha.c ft_isalnum.c ft_isascii.c ft_strlen.c \\$/;"	m
 TOOLS_DIR	Makefile	/^TOOLS_DIR = .\/fdf_srcs\/tools\/$/;"	m
 TOOLS_OBJS	Makefile	/^TOOLS_OBJS = $(addprefix $(TOOLS_DIR), $(TOOLS_OBJS_O))$/;"	m
 TOOLS_OBJS_O	Makefile	/^TOOLS_OBJS_O = $(TOOLS_SRCS:.c=.o)$/;"	m
-TOOLS_SRCS	Makefile	/^TOOLS_SRCS = call_error.c free_split.c get_map_list.c$/;"	m
+TOOLS_SRCS	Makefile	/^TOOLS_SRCS = call_error.c free_split.c get_map_list.c cal_coordinate.c ft_round.c$/;"	m
 T_SIZE	libft/libft.h	/^#  define T_SIZE$/;"	d
 T_TOOLS_DIR	Makefile	/^T_TOOLS_DIR = .\/fdf_srcs\/temp_tools\/$/;"	m
 T_TOOLS_OBJS	Makefile	/^T_TOOLS_OBJS = $(addprefix $(T_TOOLS_DIR), $(T_TOOLS_OBJS_O))$/;"	m
 T_TOOLS_OBJS_O	Makefile	/^T_TOOLS_OBJS_O = $(T_TOOLS_SRCS:.c=.o)$/;"	m
 T_TOOLS_SRCS	Makefile	/^T_TOOLS_SRCS = print_any.c$/;"	m
-UNIQ_BPP	minilibx/mlx_int.h	/^#define UNIQ_BPP	/;"	d
+UNIQ_BPP	mlx/mlx_png.c	/^#define UNIQ_BPP /;"	d	file:
+UNIQ_BPP	officialsrcs/minilibx2/mlx_png.c	/^#define UNIQ_BPP /;"	d	file:
 WARN_SHM_ATTACH	officialsrcs/minilibx/mlx_int.h	/^#define	WARN_SHM_ATTACH	/;"	d
+WARN_SHM_ATTACH	officialsrcs/minilibx3/mlx_int.h	/^#define	WARN_SHM_ATTACH	/;"	d
 WIN1_SX	officialsrcs/minilibx/test/main.c	/^#define	WIN1_SX	/;"	d	file:
+WIN1_SX	officialsrcs/minilibx3/test/main.c	/^#define	WIN1_SX	/;"	d	file:
 WIN1_SY	officialsrcs/minilibx/test/main.c	/^#define	WIN1_SY	/;"	d	file:
+WIN1_SY	officialsrcs/minilibx3/test/main.c	/^#define	WIN1_SY	/;"	d	file:
 X_ShmAttach	officialsrcs/minilibx/mlx_new_image.c	/^#define	X_ShmAttach	/;"	d	file:
+X_ShmAttach	officialsrcs/minilibx3/mlx_new_image.c	/^#define	X_ShmAttach	/;"	d	file:
+Z_CHUNK	mlx/mlx_png.c	/^#define	Z_CHUNK	/;"	d	file:
+Z_CHUNK	officialsrcs/minilibx2/mlx_png.c	/^#define	Z_CHUNK	/;"	d	file:
 _ft_recur_nbr	libft/ft_putnbr_unsigned.c	/^static void	_ft_recur_nbr(long long n, int fd, int *rtn)$/;"	f	file:
 _ft_strjoin	gnl/get_next_line_utils.c	/^char	*_ft_strjoin(char *save, char *buffer, int *rd_rtn)$/;"	f
 _ft_strndup	gnl/get_next_line_utils.c	/^char	*_ft_strndup(char *src, t_size n)$/;"	f
-appid	minilibx/mlx_int.h	/^  void			*appid;$/;"	m	struct:mlx_ptr_s
+add_pixel_to_list	fdf_srcs/pixel_module/pixel_init.c	/^static int	add_pixel_to_list(char *str, t_dlst **pixel_list_addr, int x, int y)$/;"	f	file:
 back	libft/libft.h	/^	struct s_dlst	*back;$/;"	m	struct:s_dlst	typeref:struct:s_dlst::s_dlst
+bpp	mlx/mlx_png.c	/^  int		bpp;$/;"	m	struct:png_info_s	file:
 bpp	officialsrcs/minilibx/mlx_int.h	/^  int		bpp;$/;"	m	struct:s_img
+bpp	officialsrcs/minilibx2/mlx_png.c	/^  int		bpp;$/;"	m	struct:png_info_s	file:
+bpp	officialsrcs/minilibx3/mlx_int.h	/^  int		bpp;$/;"	m	struct:s_img
 bpp1	officialsrcs/minilibx/test/main.c	/^int	bpp1;$/;"	v
+bpp1	officialsrcs/minilibx3/test/main.c	/^int	bpp1;$/;"	v
 bpp2	officialsrcs/minilibx/test/main.c	/^int	bpp2;$/;"	v
+bpp2	officialsrcs/minilibx3/test/main.c	/^int	bpp2;$/;"	v
 bpp3	officialsrcs/minilibx/test/main.c	/^int	bpp3;$/;"	v
+bpp3	officialsrcs/minilibx3/test/main.c	/^int	bpp3;$/;"	v
 bpp4	officialsrcs/minilibx/test/main.c	/^int	bpp4;$/;"	v
-buffer	minilibx/mlx_int.h	/^  char			*buffer;$/;"	m	struct:mlx_img_list_s
-bytes_per_pixel	minilibx/font.c	/^  unsigned int 	 bytes_per_pixel; \/* 2:RGB16, 3:RGB, 4:RGBA *\/ $/;"	m	struct:__anon1	file:
+bpp4	officialsrcs/minilibx3/test/main.c	/^int	bpp4;$/;"	v
+bresenham_pixel_put	fdf_srcs/mlx_module/bresenham_pixel_put.c	/^void	bresenham_pixel_put(t_pixel *p1, t_pixel *p2, t_mlx *mlx)$/;"	f
+bytes_per_pixel	mlx/font.c	/^  unsigned int 	 bytes_per_pixel; \/* 2:RGB16, 3:RGB, 4:RGBA *\/ $/;"	m	struct:__anon2	file:
+bytes_per_pixel	officialsrcs/minilibx2/font.c	/^  unsigned int 	 bytes_per_pixel; \/* 2:RGB16, 3:RGB, 4:RGBA *\/ $/;"	m	struct:__anon1	file:
 cal_size	libft/ft_split_charset.c	/^int	cal_size(char *str, char *charset)$/;"	f
 call_error	fdf_srcs/tools/call_error.c	/^void	call_error(char	*str)$/;"	f
-call_error_free_list	fdf_srcs/tools/call_error.c	/^void	call_error_free_list(t_dlst **pixel_list, char *str)$/;"	f
+call_error_free_list	fdf_srcs/tools/call_error.c	/^void	call_error_free_list(char *str, t_dlst **pixel_list)$/;"	f
 check_charset	libft/ft_split_charset.c	/^int	check_charset(char c, char *charset)$/;"	f
 cmap	officialsrcs/minilibx/mlx_int.h	/^  Colormap	cmap;$/;"	m	struct:s_xvar
-col	minilibx/mlx_xpm.c	/^  int           col;$/;"	m	struct:s_xpm_col	file:
+cmap	officialsrcs/minilibx3/mlx_int.h	/^  Colormap	cmap;$/;"	m	struct:s_xvar
+col	mlx/mlx_xpm.c	/^  int           col;$/;"	m	struct:s_xpm_col	file:
 col	officialsrcs/minilibx/mlx_int.h	/^  int		col;$/;"	m	struct:s_xpm_col
-color	includes/fdf.h	/^	int	color;$/;"	m	struct:s_pixel
-color	minilibx/mlx_xpm.c	/^  int   color;$/;"	m	struct:s_col_name	file:
+col	officialsrcs/minilibx2/mlx_xpm.c	/^  int           col;$/;"	m	struct:s_xpm_col	file:
+col	officialsrcs/minilibx3/mlx_int.h	/^  int		col;$/;"	m	struct:s_xpm_col
+color	includes/fdf.h	/^	int		color;$/;"	m	struct:s_pixel
+color	mlx/mlx_png.c	/^  int		color;$/;"	m	struct:png_info_s	file:
+color	mlx/mlx_xpm.c	/^  int   color;$/;"	m	struct:s_col_name	file:
 color	officialsrcs/minilibx/mlx_int.h	/^  int	color;$/;"	m	struct:s_col_name
+color	officialsrcs/minilibx2/mlx_png.c	/^  int		color;$/;"	m	struct:png_info_s	file:
+color	officialsrcs/minilibx2/mlx_xpm.c	/^  int   color;$/;"	m	struct:s_col_name	file:
+color	officialsrcs/minilibx3/mlx_int.h	/^  int	color;$/;"	m	struct:s_col_name
 color_map_1	officialsrcs/minilibx/test/main.c	/^int	color_map_1(void *win,int w,int h)$/;"	f
+color_map_1	officialsrcs/minilibx3/test/main.c	/^int	color_map_1(void *win,int w,int h)$/;"	f
 color_map_2	officialsrcs/minilibx/test/main.c	/^int	color_map_2(unsigned char *data,int bpp,int sl,int w,int h,int endian, int type)$/;"	f
+color_map_2	officialsrcs/minilibx3/test/main.c	/^int	color_map_2(unsigned char *data,int bpp,int sl,int w,int h,int endian, int type)$/;"	f
 content	libft/libft.h	/^	void			*content;$/;"	m	struct:s_dlst
 content	libft/libft.h	/^	void			*content;$/;"	m	struct:s_list
+convert_hex_ascii	fdf_srcs/pixel_module/pixel_color_parser.c	/^static int	convert_hex_ascii(char *str)$/;"	f	file:
+correction	fdf_srcs/pixel_module/pixel_correction.c	/^static void	correction(int min_x, int min_y, t_pixel *pixel)$/;"	f	file:
+crc_table	mlx/mlx_png.c	/^unsigned long crc_table[256] = { 0, 0x77073096, 0xee0e612c, 0x990951ba, 0x76dc419, 0x706af48f, 0xe963a535, 0x9e6495a3, 0xedb8832, 0x79dcb8a4, 0xe0d5e91e, 0x97d2d988, 0x9b64c2b, 0x7eb17cbd, 0xe7b82d07, 0x90bf1d91, 0x1db71064, 0x6ab020f2, 0xf3b97148, 0x84be41de, 0x1adad47d, 0x6ddde4eb, 0xf4d4b551, 0x83d385c7, 0x136c9856, 0x646ba8c0, 0xfd62f97a, 0x8a65c9ec, 0x14015c4f, 0x63066cd9, 0xfa0f3d63, 0x8d080df5, 0x3b6e20c8, 0x4c69105e, 0xd56041e4, 0xa2677172, 0x3c03e4d1, 0x4b04d447, 0xd20d85fd, 0xa50ab56b, 0x35b5a8fa, 0x42b2986c, 0xdbbbc9d6, 0xacbcf940, 0x32d86ce3, 0x45df5c75, 0xdcd60dcf, 0xabd13d59, 0x26d930ac, 0x51de003a, 0xc8d75180, 0xbfd06116, 0x21b4f4b5, 0x56b3c423, 0xcfba9599, 0xb8bda50f, 0x2802b89e, 0x5f058808, 0xc60cd9b2, 0xb10be924, 0x2f6f7c87, 0x58684c11, 0xc1611dab, 0xb6662d3d, 0x76dc4190, 0x1db7106, 0x98d220bc, 0xefd5102a, 0x71b18589, 0x6b6b51f, 0x9fbfe4a5, 0xe8b8d433, 0x7807c9a2, 0xf00f934, 0x9609a88e, 0xe10e9818, 0x7f6a0dbb, 0x86d3d2d, 0x91646c97, 0xe6635c01, 0x6b6b51f4, 0x1c6c6162, 0x856530d8, 0xf262004e, 0x6c0695ed, 0x1b01a57b, 0x8208f4c1, 0xf50fc457, 0x65b0d9c6, 0x12b7e950, 0x8bbeb8ea, 0xfcb9887c, 0x62dd1ddf, 0x15da2d49, 0x8cd37cf3, 0xfbd44c65, 0x4db26158, 0x3ab551ce, 0xa3bc0074, 0xd4bb30e2, 0x4adfa541, 0x3dd895d7, 0xa4d1c46d, 0xd3d6f4fb, 0x4369e96a, 0x346ed9fc, 0xad678846, 0xda60b8d0, 0x44042d73, 0x33031de5, 0xaa0a4c5f, 0xdd0d7cc9, 0x5005713c, 0x270241aa, 0xbe0b1010, 0xc90c2086, 0x5768b525, 0x206f85b3, 0xb966d409, 0xce61e49f, 0x5edef90e, 0x29d9c998, 0xb0d09822, 0xc7d7a8b4, 0x59b33d17, 0x2eb40d81, 0xb7bd5c3b, 0xc0ba6cad, 0xedb88320, 0x9abfb3b6, 0x3b6e20c, 0x74b1d29a, 0xead54739, 0x9dd277af, 0x4db2615, 0x73dc1683, 0xe3630b12, 0x94643b84, 0xd6d6a3e, 0x7a6a5aa8, 0xe40ecf0b, 0x9309ff9d, 0xa00ae27, 0x7d079eb1, 0xf00f9344, 0x8708a3d2, 0x1e01f268, 0x6906c2fe, 0xf762575d, 0x806567cb, 0x196c3671, 0x6e6b06e7, 0xfed41b76, 0x89d32be0, 0x10da7a5a, 0x67dd4acc, 0xf9b9df6f, 0x8ebeeff9, 0x17b7be43, 0x60b08ed5, 0xd6d6a3e8, 0xa1d1937e, 0x38d8c2c4, 0x4fdff252, 0xd1bb67f1, 0xa6bc5767, 0x3fb506dd, 0x48b2364b, 0xd80d2bda, 0xaf0a1b4c, 0x36034af6, 0x41047a60, 0xdf60efc3, 0xa867df55, 0x316e8eef, 0x4669be79, 0xcb61b38c, 0xbc66831a, 0x256fd2a0, 0x5268e236, 0xcc0c7795, 0xbb0b4703, 0x220216b9, 0x5505262f, 0xc5ba3bbe, 0xb2bd0b28, 0x2bb45a92, 0x5cb36a04, 0xc2d7ffa7, 0xb5d0cf31, 0x2cd99e8b, 0x5bdeae1d, 0x9b64c2b0, 0xec63f226, 0x756aa39c, 0x26d930a, 0x9c0906a9, 0xeb0e363f, 0x72076785, 0x5005713, 0x95bf4a82, 0xe2b87a14, 0x7bb12bae, 0xcb61b38, 0x92d28e9b, 0xe5d5be0d, 0x7cdcefb7, 0xbdbdf21, 0x86d3d2d4, 0xf1d4e242, 0x68ddb3f8, 0x1fda836e, 0x81be16cd, 0xf6b9265b, 0x6fb077e1, 0x18b74777, 0x88085ae6, 0xff0f6a70, 0x66063bca, 0x11010b5c, 0x8f659eff, 0xf862ae69, 0x616bffd3, 0x166ccf45, 0xa00ae278, 0xd70dd2ee, 0x4e048354, 0x3903b3c2, 0xa7672661, 0xd06016f7, 0x4969474d, 0x3e6e77db, 0xaed16a4a, 0xd9d65adc, 0x40df0b66, 0x37d83bf0, 0xa9bcae53, 0xdebb9ec5, 0x47b2cf7f, 0x30b5ffe9, 0xbdbdf21c, 0xcabac28a, 0x53b39330, 0x24b4a3a6, 0xbad03605, 0xcdd70693, 0x54de5729, 0x23d967bf, 0xb3667a2e, 0xc4614ab8, 0x5d681b02, 0x2a6f2b94, 0xb40bbe37, 0xc30c8ea1, 0x5a05df1b, 0x2d02ef8d };$/;"	v
+crc_table	officialsrcs/minilibx2/mlx_png.c	/^unsigned long crc_table[256] = { 0, 0x77073096, 0xee0e612c, 0x990951ba, 0x76dc419, 0x706af48f, 0xe963a535, 0x9e6495a3, 0xedb8832, 0x79dcb8a4, 0xe0d5e91e, 0x97d2d988, 0x9b64c2b, 0x7eb17cbd, 0xe7b82d07, 0x90bf1d91, 0x1db71064, 0x6ab020f2, 0xf3b97148, 0x84be41de, 0x1adad47d, 0x6ddde4eb, 0xf4d4b551, 0x83d385c7, 0x136c9856, 0x646ba8c0, 0xfd62f97a, 0x8a65c9ec, 0x14015c4f, 0x63066cd9, 0xfa0f3d63, 0x8d080df5, 0x3b6e20c8, 0x4c69105e, 0xd56041e4, 0xa2677172, 0x3c03e4d1, 0x4b04d447, 0xd20d85fd, 0xa50ab56b, 0x35b5a8fa, 0x42b2986c, 0xdbbbc9d6, 0xacbcf940, 0x32d86ce3, 0x45df5c75, 0xdcd60dcf, 0xabd13d59, 0x26d930ac, 0x51de003a, 0xc8d75180, 0xbfd06116, 0x21b4f4b5, 0x56b3c423, 0xcfba9599, 0xb8bda50f, 0x2802b89e, 0x5f058808, 0xc60cd9b2, 0xb10be924, 0x2f6f7c87, 0x58684c11, 0xc1611dab, 0xb6662d3d, 0x76dc4190, 0x1db7106, 0x98d220bc, 0xefd5102a, 0x71b18589, 0x6b6b51f, 0x9fbfe4a5, 0xe8b8d433, 0x7807c9a2, 0xf00f934, 0x9609a88e, 0xe10e9818, 0x7f6a0dbb, 0x86d3d2d, 0x91646c97, 0xe6635c01, 0x6b6b51f4, 0x1c6c6162, 0x856530d8, 0xf262004e, 0x6c0695ed, 0x1b01a57b, 0x8208f4c1, 0xf50fc457, 0x65b0d9c6, 0x12b7e950, 0x8bbeb8ea, 0xfcb9887c, 0x62dd1ddf, 0x15da2d49, 0x8cd37cf3, 0xfbd44c65, 0x4db26158, 0x3ab551ce, 0xa3bc0074, 0xd4bb30e2, 0x4adfa541, 0x3dd895d7, 0xa4d1c46d, 0xd3d6f4fb, 0x4369e96a, 0x346ed9fc, 0xad678846, 0xda60b8d0, 0x44042d73, 0x33031de5, 0xaa0a4c5f, 0xdd0d7cc9, 0x5005713c, 0x270241aa, 0xbe0b1010, 0xc90c2086, 0x5768b525, 0x206f85b3, 0xb966d409, 0xce61e49f, 0x5edef90e, 0x29d9c998, 0xb0d09822, 0xc7d7a8b4, 0x59b33d17, 0x2eb40d81, 0xb7bd5c3b, 0xc0ba6cad, 0xedb88320, 0x9abfb3b6, 0x3b6e20c, 0x74b1d29a, 0xead54739, 0x9dd277af, 0x4db2615, 0x73dc1683, 0xe3630b12, 0x94643b84, 0xd6d6a3e, 0x7a6a5aa8, 0xe40ecf0b, 0x9309ff9d, 0xa00ae27, 0x7d079eb1, 0xf00f9344, 0x8708a3d2, 0x1e01f268, 0x6906c2fe, 0xf762575d, 0x806567cb, 0x196c3671, 0x6e6b06e7, 0xfed41b76, 0x89d32be0, 0x10da7a5a, 0x67dd4acc, 0xf9b9df6f, 0x8ebeeff9, 0x17b7be43, 0x60b08ed5, 0xd6d6a3e8, 0xa1d1937e, 0x38d8c2c4, 0x4fdff252, 0xd1bb67f1, 0xa6bc5767, 0x3fb506dd, 0x48b2364b, 0xd80d2bda, 0xaf0a1b4c, 0x36034af6, 0x41047a60, 0xdf60efc3, 0xa867df55, 0x316e8eef, 0x4669be79, 0xcb61b38c, 0xbc66831a, 0x256fd2a0, 0x5268e236, 0xcc0c7795, 0xbb0b4703, 0x220216b9, 0x5505262f, 0xc5ba3bbe, 0xb2bd0b28, 0x2bb45a92, 0x5cb36a04, 0xc2d7ffa7, 0xb5d0cf31, 0x2cd99e8b, 0x5bdeae1d, 0x9b64c2b0, 0xec63f226, 0x756aa39c, 0x26d930a, 0x9c0906a9, 0xeb0e363f, 0x72076785, 0x5005713, 0x95bf4a82, 0xe2b87a14, 0x7bb12bae, 0xcb61b38, 0x92d28e9b, 0xe5d5be0d, 0x7cdcefb7, 0xbdbdf21, 0x86d3d2d4, 0xf1d4e242, 0x68ddb3f8, 0x1fda836e, 0x81be16cd, 0xf6b9265b, 0x6fb077e1, 0x18b74777, 0x88085ae6, 0xff0f6a70, 0x66063bca, 0x11010b5c, 0x8f659eff, 0xf862ae69, 0x616bffd3, 0x166ccf45, 0xa00ae278, 0xd70dd2ee, 0x4e048354, 0x3903b3c2, 0xa7672661, 0xd06016f7, 0x4969474d, 0x3e6e77db, 0xaed16a4a, 0xd9d65adc, 0x40df0b66, 0x37d83bf0, 0xa9bcae53, 0xdebb9ec5, 0x47b2cf7f, 0x30b5ffe9, 0xbdbdf21c, 0xcabac28a, 0x53b39330, 0x24b4a3a6, 0xbad03605, 0xcdd70693, 0x54de5729, 0x23d967bf, 0xb3667a2e, 0xc4614ab8, 0x5d681b02, 0x2a6f2b94, 0xb40bbe37, 0xc30c8ea1, 0x5a05df1b, 0x2d02ef8d };$/;"	v
 data	officialsrcs/minilibx/mlx_int.h	/^  char		*data;$/;"	m	struct:s_img
+data	officialsrcs/minilibx3/mlx_int.h	/^  char		*data;$/;"	m	struct:s_img
 data1	officialsrcs/minilibx/test/main.c	/^char	*data1;$/;"	v
+data1	officialsrcs/minilibx3/test/main.c	/^char	*data1;$/;"	v
 data2	officialsrcs/minilibx/test/main.c	/^char	*data2;$/;"	v
+data2	officialsrcs/minilibx3/test/main.c	/^char	*data2;$/;"	v
 data3	officialsrcs/minilibx/test/main.c	/^char	*data3;$/;"	v
+data3	officialsrcs/minilibx3/test/main.c	/^char	*data3;$/;"	v
 data4	officialsrcs/minilibx/test/main.c	/^char	*data4;$/;"	v
+data4	officialsrcs/minilibx3/test/main.c	/^char	*data4;$/;"	v
 decrgb	officialsrcs/minilibx/mlx_int.h	/^  int		decrgb[6];$/;"	m	struct:s_xvar
+decrgb	officialsrcs/minilibx3/mlx_int.h	/^  int		decrgb[6];$/;"	m	struct:s_xvar
+depth	mlx/mlx_png.c	/^  int		depth;$/;"	m	struct:png_info_s	file:
 depth	officialsrcs/minilibx/mlx_int.h	/^  int		depth;$/;"	m	struct:s_xvar
+depth	officialsrcs/minilibx2/mlx_png.c	/^  int		depth;$/;"	m	struct:png_info_s	file:
+depth	officialsrcs/minilibx3/mlx_int.h	/^  int		depth;$/;"	m	struct:s_xvar
 display	officialsrcs/minilibx/mlx_int.h	/^  Display	*display;$/;"	m	struct:s_xvar
-display_log	minilibx/mlx_shaders.c	/^void display_log(GLuint object, void (*param_func)(), void (*getlog_func)())$/;"	f
+display	officialsrcs/minilibx3/mlx_int.h	/^  Display	*display;$/;"	m	struct:s_xvar
 do_flush	officialsrcs/minilibx/mlx_int.h	/^  int		do_flush;$/;"	m	struct:s_xvar
+do_flush	officialsrcs/minilibx3/mlx_int.h	/^  int		do_flush;$/;"	m	struct:s_xvar
 endian1	officialsrcs/minilibx/test/main.c	/^int	endian1;$/;"	v
+endian1	officialsrcs/minilibx3/test/main.c	/^int	endian1;$/;"	v
 endian2	officialsrcs/minilibx/test/main.c	/^int	endian2;$/;"	v
+endian2	officialsrcs/minilibx3/test/main.c	/^int	endian2;$/;"	v
 endian3	officialsrcs/minilibx/test/main.c	/^int	endian3;$/;"	v
+endian3	officialsrcs/minilibx3/test/main.c	/^int	endian3;$/;"	v
 endian4	officialsrcs/minilibx/test/main.c	/^int	endian4;$/;"	v
+endian4	officialsrcs/minilibx3/test/main.c	/^int	endian4;$/;"	v
+esc_key	fdf_srcs/mlx_module/mod_mlx.c	/^static int	esc_key(int key, void *mlx)$/;"	f	file:
 expose_hook	officialsrcs/minilibx/mlx_int.h	/^  int			(*expose_hook)();$/;"	m	struct:s_win_list
+expose_hook	officialsrcs/minilibx3/mlx_int.h	/^  int			(*expose_hook)();$/;"	m	struct:s_win_list
 expose_param	officialsrcs/minilibx/mlx_int.h	/^  void			*expose_param;$/;"	m	struct:s_win_list
+expose_param	officialsrcs/minilibx3/mlx_int.h	/^  void			*expose_param;$/;"	m	struct:s_win_list
 expose_win1	officialsrcs/minilibx/test/main.c	/^int	expose_win1(void *p)$/;"	f
+expose_win1	officialsrcs/minilibx3/test/main.c	/^int	expose_win1(void *p)$/;"	f
 expose_win2	officialsrcs/minilibx/test/main.c	/^int	expose_win2(void *p)$/;"	f
+expose_win2	officialsrcs/minilibx3/test/main.c	/^int	expose_win2(void *p)$/;"	f
 extension_check_module	fdf_srcs/map_check_module/extension_check_module.c	/^int	extension_check_module(char *path)$/;"	f
 fils_de_fer	fdf_srcs/fils_de_fer.c	/^void fils_de_fer(char *path)$/;"	f
-font	minilibx/mlx_int.h	/^  mlx_img_list_t	*font;$/;"	m	struct:mlx_ptr_s
-font_atlas	minilibx/font.c	/^} font_atlas = {$/;"	v	typeref:struct:__anon1	file:
-font_fshader	minilibx/mlx_int.h	/^  GLuint	font_fshader;$/;"	m	struct:glsl_info_s
-font_program	minilibx/mlx_int.h	/^  GLuint	font_program;$/;"	m	struct:glsl_info_s
-font_vshader	minilibx/mlx_int.h	/^  GLuint	font_vshader;$/;"	m	struct:glsl_info_s
+find_hex_str	fdf_srcs/pixel_module/pixel_color_parser.c	/^static int	find_hex_str(char c)$/;"	f	file:
+font_atlas	mlx/font.c	/^} font_atlas = {$/;"	v	typeref:struct:__anon2	file:
+font_atlas	officialsrcs/minilibx2/font.c	/^} font_atlas = {$/;"	v	typeref:struct:__anon1	file:
 format	officialsrcs/minilibx/mlx_int.h	/^  int		format;$/;"	m	struct:s_img
+format	officialsrcs/minilibx3/mlx_int.h	/^  int		format;$/;"	m	struct:s_img
 free_split	fdf_srcs/tools/free_split.c	/^void	free_split(char	**splited)$/;"	f
 ft_atoi	libft/ft_atoi.c	/^int	ft_atoi(const char *str)$/;"	f
 ft_bzero	libft/ft_bzero.c	/^void	ft_bzero(void *s, t_size n)$/;"	f
@@ -170,6 +297,7 @@ ft_isascii	libft/ft_isascii.c	/^int	ft_isascii(int c)$/;"	f
 ft_isdigit	libft/ft_isdigit.c	/^int	ft_isdigit(int c)$/;"	f
 ft_isprint	libft/ft_isprint.c	/^int	ft_isprint(int c)$/;"	f
 ft_isspace	libft/ft_atoi.c	/^static int	ft_isspace(char c)$/;"	f	file:
+ft_isspace	libft/ft_isspace.c	/^int	ft_isspace(char c)$/;"	f
 ft_itoa	libft/ft_itoa.c	/^char	*ft_itoa(int n)$/;"	f
 ft_lstadd_back	libft/ft_lstadd_back.c	/^void	ft_lstadd_back(t_list **lst, t_list *new)$/;"	f
 ft_lstadd_front	libft/ft_lstadd_front.c	/^void	ft_lstadd_front(t_list **lst, t_list *new)$/;"	f
@@ -218,234 +346,390 @@ ft_substr	libft/ft_substr.c	/^char	*ft_substr(char const *s, unsigned int start,
 ft_tolower	libft/ft_tolower.c	/^int	ft_tolower(int c)$/;"	f
 ft_toupper	libft/ft_toupper.c	/^int	ft_toupper(int c)$/;"	f
 ft_wd_cnt	libft/ft_split.c	/^static	int	ft_wd_cnt(char *str, char c)$/;"	f	file:
-func_t	minilibx/mlx_int.h	/^typedef int (*func_t)();$/;"	t
 gc	officialsrcs/minilibx/mlx_int.h	/^  GC			gc;$/;"	m	struct:s_win_list
 gc	officialsrcs/minilibx/mlx_int.h	/^  GC		gc;$/;"	m	struct:s_img
+gc	officialsrcs/minilibx3/mlx_int.h	/^  GC			gc;$/;"	m	struct:s_win_list
+gc	officialsrcs/minilibx3/mlx_int.h	/^  GC		gc;$/;"	m	struct:s_img
 gere_mouse	officialsrcs/minilibx/test/new_win.c	/^int gere_mouse(int x,int y,int button,void*toto)$/;"	f
+gere_mouse	officialsrcs/minilibx3/test/new_win.c	/^int gere_mouse(int x,int y,int button,void*toto)$/;"	f
+get_index	fdf_srcs/pixel_module/pixel_color_parser.c	/^static int	get_index(char c)$/;"	f	file:
 get_map_list	fdf_srcs/tools/get_map_list.c	/^void	get_map_list(char	*path, t_dlst **line_list)$/;"	f
+get_min_x	fdf_srcs/pixel_module/pixel_correction.c	/^static int	get_min_x(t_dlst *pixel_list)$/;"	f	file:
+get_min_y	fdf_srcs/pixel_module/pixel_correction.c	/^static int	get_min_y(t_dlst *pixel_list)$/;"	f	file:
 get_next_line	gnl/get_next_line.c	/^char	*get_next_line(int fd)$/;"	f
 get_num	fdf_srcs/map_check_module/square_check_module.c	/^static int	get_num(t_dlst	*line_list)$/;"	f	file:
-glsl_info_s	minilibx/mlx_int.h	/^typedef struct	glsl_info_s$/;"	s
-glsl_info_t	minilibx/mlx_int.h	/^} glsl_info_t;$/;"	t	typeref:struct:glsl_info_s
-height	minilibx/font.c	/^  unsigned int 	 height;$/;"	m	struct:__anon1	file:
-height	minilibx/mlx_int.h	/^  int			height;$/;"	m	struct:mlx_img_list_s
+get_x	fdf_srcs/tools/cal_coordinate.c	/^double	get_x(int x, int y, int angle)$/;"	f
+get_y	fdf_srcs/tools/cal_coordinate.c	/^int	get_y(int x, int y, int z)$/;"	f
+height	mlx/font.c	/^  unsigned int 	 height;$/;"	m	struct:__anon2	file:
+height	mlx/mlx_png.c	/^  unsigned int	height;$/;"	m	struct:png_info_s	file:
 height	officialsrcs/minilibx/mlx_int.h	/^  int		height;$/;"	m	struct:s_img
+height	officialsrcs/minilibx2/font.c	/^  unsigned int 	 height;$/;"	m	struct:__anon1	file:
+height	officialsrcs/minilibx2/mlx_png.c	/^  unsigned int	height;$/;"	m	struct:png_info_s	file:
+height	officialsrcs/minilibx3/mlx_int.h	/^  int		height;$/;"	m	struct:s_img
 hook	officialsrcs/minilibx/mlx_int.h	/^  int		(*hook)();$/;"	m	struct:s_event_list
+hook	officialsrcs/minilibx3/mlx_int.h	/^  int		(*hook)();$/;"	m	struct:s_event_list
 hooks	officialsrcs/minilibx/mlx_int.h	/^  t_event_list		hooks[MLX_MAX_EVENT];$/;"	m	struct:s_win_list
+hooks	officialsrcs/minilibx3/mlx_int.h	/^  t_event_list		hooks[MLX_MAX_EVENT];$/;"	m	struct:s_win_list
 im1	officialsrcs/minilibx/test/main.c	/^void    *im1;$/;"	v
+im1	officialsrcs/minilibx3/test/main.c	/^void    *im1;$/;"	v
 im2	officialsrcs/minilibx/test/main.c	/^void	*im2;$/;"	v
+im2	officialsrcs/minilibx3/test/main.c	/^void	*im2;$/;"	v
 im3	officialsrcs/minilibx/test/main.c	/^void	*im3;$/;"	v
+im3	officialsrcs/minilibx3/test/main.c	/^void	*im3;$/;"	v
 im4	officialsrcs/minilibx/test/main.c	/^void	*im4;$/;"	v
+im4	officialsrcs/minilibx3/test/main.c	/^void	*im4;$/;"	v
 image	officialsrcs/minilibx/mlx_int.h	/^  XImage	*image;$/;"	m	struct:s_img
-image_fshader	minilibx/mlx_int.h	/^  GLuint	image_fshader;$/;"	m	struct:glsl_info_s
-image_program	minilibx/mlx_int.h	/^  GLuint	image_program;$/;"	m	struct:glsl_info_s
-image_vshader	minilibx/mlx_int.h	/^  GLuint	image_vshader;$/;"	m	struct:glsl_info_s
-img	minilibx/mlx_int.h	/^  mlx_img_list_t	*img;$/;"	m	struct:mlx_img_ctx_s
-img_list	minilibx/mlx_int.h	/^  mlx_img_ctx_t		*img_list;$/;"	m	struct:mlx_win_list_s
-img_list	minilibx/mlx_int.h	/^  mlx_img_list_t	*img_list;$/;"	m	struct:mlx_ptr_s
+image	officialsrcs/minilibx3/mlx_int.h	/^  XImage	*image;$/;"	m	struct:s_img
+init_pixel	fdf_srcs/pixel_module/pixel_init.c	/^void	init_pixel(t_dlst *line_list, t_dlst **line_list_addr, t_dlst **pixel_list_addr)$/;"	f
+interlace	mlx/mlx_png.c	/^  int		interlace;$/;"	m	struct:png_info_s	file:
+interlace	officialsrcs/minilibx2/mlx_png.c	/^  int		interlace;$/;"	m	struct:png_info_s	file:
 key_hook	officialsrcs/minilibx/mlx_int.h	/^  int			(*key_hook)();$/;"	m	struct:s_win_list
+key_hook	officialsrcs/minilibx3/mlx_int.h	/^  int			(*key_hook)();$/;"	m	struct:s_win_list
 key_param	officialsrcs/minilibx/mlx_int.h	/^  void			*key_param;$/;"	m	struct:s_win_list
+key_param	officialsrcs/minilibx3/mlx_int.h	/^  void			*key_param;$/;"	m	struct:s_win_list
 key_win1	officialsrcs/minilibx/test/main.c	/^int	key_win1(int key,void *p)$/;"	f
+key_win1	officialsrcs/minilibx3/test/main.c	/^int	key_win1(int key,void *p)$/;"	f
 key_win2	officialsrcs/minilibx/test/main.c	/^int	key_win2(int key,void *p)$/;"	f
+key_win2	officialsrcs/minilibx3/test/main.c	/^int	key_win2(int key,void *p)$/;"	f
 key_win3	officialsrcs/minilibx/test/main.c	/^int	key_win3(int key,void *p)$/;"	f
-loc_font_atlassize	minilibx/mlx_int.h	/^  GLint		loc_font_atlassize;$/;"	m	struct:glsl_info_s
-loc_font_color	minilibx/mlx_int.h	/^  GLint		loc_font_color;$/;"	m	struct:glsl_info_s
-loc_font_posinatlas	minilibx/mlx_int.h	/^  GLint		loc_font_posinatlas;$/;"	m	struct:glsl_info_s
-loc_font_posinwin	minilibx/mlx_int.h	/^  GLint		loc_font_posinwin;$/;"	m	struct:glsl_info_s
-loc_font_position	minilibx/mlx_int.h	/^  GLint		loc_font_position;$/;"	m	struct:glsl_info_s
-loc_font_texture	minilibx/mlx_int.h	/^  GLint		loc_font_texture;$/;"	m	struct:glsl_info_s
-loc_font_winhalfsize	minilibx/mlx_int.h	/^  GLint		loc_font_winhalfsize;$/;"	m	struct:glsl_info_s
-loc_image_pos	minilibx/mlx_int.h	/^  GLint		loc_image_pos;$/;"	m	struct:glsl_info_s
-loc_image_position	minilibx/mlx_int.h	/^  GLint		loc_image_position;$/;"	m	struct:glsl_info_s
-loc_image_size	minilibx/mlx_int.h	/^  GLint		loc_image_size;$/;"	m	struct:glsl_info_s
-loc_image_texture	minilibx/mlx_int.h	/^  GLint		loc_image_texture;$/;"	m	struct:glsl_info_s
-loc_image_winhalfsize	minilibx/mlx_int.h	/^  GLint		loc_image_winhalfsize;$/;"	m	struct:glsl_info_s
-loc_pixel_position	minilibx/mlx_int.h	/^  GLint		loc_pixel_position;$/;"	m	struct:glsl_info_s
-loc_pixel_texture	minilibx/mlx_int.h	/^  GLint		loc_pixel_texture;$/;"	m	struct:glsl_info_s
-loc_pixel_winhalfsize	minilibx/mlx_int.h	/^  GLint		loc_pixel_winhalfsize;$/;"	m	struct:glsl_info_s
+key_win3	officialsrcs/minilibx3/test/main.c	/^int	key_win3(int key,void *p)$/;"	f
 local_endian	officialsrcs/minilibx/test/main.c	/^int	local_endian;$/;"	v
-loop_hook	minilibx/mlx_int.h	/^  void			(*loop_hook)(void *);$/;"	m	struct:mlx_ptr_s
+local_endian	officialsrcs/minilibx3/test/main.c	/^int	local_endian;$/;"	v
 loop_hook	officialsrcs/minilibx/mlx_int.h	/^  int		(*loop_hook)();$/;"	m	struct:s_xvar
-loop_hook_data	minilibx/mlx_int.h	/^  void			*loop_hook_data;$/;"	m	struct:mlx_ptr_s
+loop_hook	officialsrcs/minilibx3/mlx_int.h	/^  int		(*loop_hook)();$/;"	m	struct:s_xvar
 loop_param	officialsrcs/minilibx/mlx_int.h	/^  void		*loop_param;$/;"	m	struct:s_xvar
-loop_timer	minilibx/mlx_int.h	/^  void			*loop_timer;$/;"	m	struct:mlx_ptr_s
+loop_param	officialsrcs/minilibx3/mlx_int.h	/^  void		*loop_param;$/;"	m	struct:s_xvar
+magic	mlx/mlx_png.c	/^unsigned char magic[PNG_MAGIC_SIZE] = {137, 80, 78, 71, 13, 10, 26, 10};$/;"	v
+magic	officialsrcs/minilibx2/mlx_png.c	/^unsigned char magic[PNG_MAGIC_SIZE] = {137, 80, 78, 71, 13, 10, 26, 10};$/;"	v
 main	fdf_srcs/main.c	/^int main(int ac, char **av)$/;"	f
 main	officialsrcs/minilibx/test/main.c	/^int	main()$/;"	f
 main	officialsrcs/minilibx/test/new_win.c	/^int main()$/;"	f
-main_loop_active	minilibx/mlx_int.h	/^  int			main_loop_active;$/;"	m	struct:mlx_ptr_s
+main	officialsrcs/minilibx3/test/main.c	/^int	main()$/;"	f
+main	officialsrcs/minilibx3/test/new_win.c	/^int main()$/;"	f
 make_str	libft/ft_split_charset.c	/^char	*make_str(char *str, int s, char *charset, int *alloc_error)$/;"	f
-map_x	includes/fdf.h	/^	int	map_x;$/;"	m	struct:s_pixel
-map_y	includes/fdf.h	/^	int	map_y;$/;"	m	struct:s_pixel
-map_z	includes/fdf.h	/^	int	map_z;$/;"	m	struct:s_pixel
+map_x	includes/fdf.h	/^	int		map_x;$/;"	m	struct:s_pixel
+map_y	includes/fdf.h	/^	int		map_y;$/;"	m	struct:s_pixel
+map_z	includes/fdf.h	/^	int		map_z;$/;"	m	struct:s_pixel
 mask	officialsrcs/minilibx/mlx_int.h	/^  int		mask;$/;"	m	struct:s_event_list
+mask	officialsrcs/minilibx3/mlx_int.h	/^  int		mask;$/;"	m	struct:s_event_list
+mipng_crc	mlx/mlx_png.c	/^int	mipng_crc(unsigned char *ptr, int len)$/;"	f
+mipng_crc	officialsrcs/minilibx2/mlx_png.c	/^int	mipng_crc(unsigned char *ptr, int len)$/;"	f
+mipng_data	mlx/mlx_png.c	/^int	mipng_data(void *img, unsigned char *dat, png_info_t *pi)$/;"	f
+mipng_data	officialsrcs/minilibx2/mlx_png.c	/^int	mipng_data(void *img, unsigned char *dat, png_info_t *pi)$/;"	f
+mipng_defilter	mlx/mlx_png.c	/^unsigned char (*(mipng_defilter[]))(unsigned char *buff, int pos, int a, int b, int c) =$/;"	v
+mipng_defilter	officialsrcs/minilibx2/mlx_png.c	/^unsigned char (*(mipng_defilter[]))(unsigned char *buff, int pos, int a, int b, int c) =$/;"	v
+mipng_defilter_average	mlx/mlx_png.c	/^unsigned char mipng_defilter_average(unsigned char *buff, int pos, int a, int b, int c)$/;"	f
+mipng_defilter_average	officialsrcs/minilibx2/mlx_png.c	/^unsigned char mipng_defilter_average(unsigned char *buff, int pos, int a, int b, int c)$/;"	f
+mipng_defilter_none	mlx/mlx_png.c	/^unsigned char mipng_defilter_none(unsigned char *buff, int pos, int a, int b, int c)$/;"	f
+mipng_defilter_none	officialsrcs/minilibx2/mlx_png.c	/^unsigned char mipng_defilter_none(unsigned char *buff, int pos, int a, int b, int c)$/;"	f
+mipng_defilter_paeth	mlx/mlx_png.c	/^unsigned char mipng_defilter_paeth(unsigned char *buff, int pos, int a, int b, int c)$/;"	f
+mipng_defilter_paeth	officialsrcs/minilibx2/mlx_png.c	/^unsigned char mipng_defilter_paeth(unsigned char *buff, int pos, int a, int b, int c)$/;"	f
+mipng_defilter_sub	mlx/mlx_png.c	/^unsigned char mipng_defilter_sub(unsigned char *buff, int pos, int a, int b, int c)$/;"	f
+mipng_defilter_sub	officialsrcs/minilibx2/mlx_png.c	/^unsigned char mipng_defilter_sub(unsigned char *buff, int pos, int a, int b, int c)$/;"	f
+mipng_defilter_up	mlx/mlx_png.c	/^unsigned char mipng_defilter_up(unsigned char *buff, int pos, int a, int b, int c)$/;"	f
+mipng_defilter_up	officialsrcs/minilibx2/mlx_png.c	/^unsigned char mipng_defilter_up(unsigned char *buff, int pos, int a, int b, int c)$/;"	f
+mipng_err	mlx/mlx_png.c	/^char *(mipng_err[]) =$/;"	v
+mipng_err	officialsrcs/minilibx2/mlx_png.c	/^char *(mipng_err[]) =$/;"	v
+mipng_fill_img	mlx/mlx_png.c	/^int	mipng_fill_img(void *img, unsigned char *buf, png_info_t *pi)$/;"	f
+mipng_fill_img	officialsrcs/minilibx2/mlx_png.c	/^int	mipng_fill_img(void *img, unsigned char *buf, png_info_t *pi)$/;"	f
+mipng_is_type	mlx/mlx_png.c	/^int	mipng_is_type(unsigned char *ptr, char *type)$/;"	f
+mipng_is_type	officialsrcs/minilibx2/mlx_png.c	/^int	mipng_is_type(unsigned char *ptr, char *type)$/;"	f
+mipng_magic	mlx/mlx_png.c	/^int	mipng_magic(unsigned char *ptr, int size)$/;"	f
+mipng_magic	officialsrcs/minilibx2/mlx_png.c	/^int	mipng_magic(unsigned char *ptr, int size)$/;"	f
+mipng_structure	mlx/mlx_png.c	/^int	mipng_structure(unsigned char *ptr, int size, unsigned char **hdr, unsigned char **dat)$/;"	f
+mipng_structure	officialsrcs/minilibx2/mlx_png.c	/^int	mipng_structure(unsigned char *ptr, int size, unsigned char **hdr, unsigned char **dat)$/;"	f
+mipng_verif_hdr	mlx/mlx_png.c	/^int	mipng_verif_hdr(unsigned char *hdr, png_info_t *pi)$/;"	f
+mipng_verif_hdr	officialsrcs/minilibx2/mlx_png.c	/^int	mipng_verif_hdr(unsigned char *hdr, png_info_t *pi)$/;"	f
 mlx	officialsrcs/minilibx/test/main.c	/^void	*mlx;$/;"	v
 mlx	officialsrcs/minilibx/test/new_win.c	/^void *mlx;$/;"	v
+mlx	officialsrcs/minilibx3/test/main.c	/^void	*mlx;$/;"	v
+mlx	officialsrcs/minilibx3/test/new_win.c	/^void *mlx;$/;"	v
 mlx_X_error	officialsrcs/minilibx/mlx_new_image.c	/^int	mlx_X_error;$/;"	v
+mlx_X_error	officialsrcs/minilibx3/mlx_new_image.c	/^int	mlx_X_error;$/;"	v
 mlx_clear_window	officialsrcs/minilibx/mlx_clear_window.c	/^int		mlx_clear_window(t_xvar *xvar,t_win_list *win)$/;"	f
-mlx_col_name	minilibx/mlx_rgb.c	/^struct s_col_name mlx_col_name[] =$/;"	v	typeref:struct:s_col_name
+mlx_clear_window	officialsrcs/minilibx3/mlx_clear_window.c	/^int		mlx_clear_window(t_xvar *xvar,t_win_list *win)$/;"	f
+mlx_col_name	mlx/mlx_rgb.c	/^struct s_col_name mlx_col_name[] =$/;"	v	typeref:struct:s_col_name
 mlx_col_name	officialsrcs/minilibx/mlx_rgb.c	/^struct s_col_name mlx_col_name[] =$/;"	v	typeref:struct:s_col_name
+mlx_col_name	officialsrcs/minilibx2/mlx_rgb.c	/^struct s_col_name mlx_col_name[] =$/;"	v	typeref:struct:s_col_name
+mlx_col_name	officialsrcs/minilibx3/mlx_rgb.c	/^struct s_col_name mlx_col_name[] =$/;"	v	typeref:struct:s_col_name
 mlx_destroy_image	officialsrcs/minilibx/mlx_destroy_image.c	/^int	mlx_destroy_image(t_xvar *xvar, t_img *img)$/;"	f
+mlx_destroy_image	officialsrcs/minilibx3/mlx_destroy_image.c	/^int	mlx_destroy_image(t_xvar *xvar, t_img *img)$/;"	f
 mlx_destroy_window	officialsrcs/minilibx/mlx_destroy_window.c	/^int	mlx_destroy_window(t_xvar *xvar,t_win_list *win)$/;"	f
+mlx_destroy_window	officialsrcs/minilibx3/mlx_destroy_window.c	/^int	mlx_destroy_window(t_xvar *xvar,t_win_list *win)$/;"	f
 mlx_do_key_autorepeatoff	officialsrcs/minilibx/mlx_hook.c	/^int	mlx_do_key_autorepeatoff(t_xvar *xvar)$/;"	f
+mlx_do_key_autorepeatoff	officialsrcs/minilibx3/mlx_hook.c	/^int	mlx_do_key_autorepeatoff(t_xvar *xvar)$/;"	f
 mlx_do_key_autorepeaton	officialsrcs/minilibx/mlx_hook.c	/^int	mlx_do_key_autorepeaton(t_xvar *xvar)$/;"	f
+mlx_do_key_autorepeaton	officialsrcs/minilibx3/mlx_hook.c	/^int	mlx_do_key_autorepeaton(t_xvar *xvar)$/;"	f
 mlx_do_sync	officialsrcs/minilibx/mlx_hook.c	/^int	mlx_do_sync(t_xvar *xvar)$/;"	f
+mlx_do_sync	officialsrcs/minilibx3/mlx_hook.c	/^int	mlx_do_sync(t_xvar *xvar)$/;"	f
 mlx_expose_hook	officialsrcs/minilibx/mlx_expose_hook.c	/^int		mlx_expose_hook(t_win_list *win,int (*funct)(),void *param)$/;"	f
+mlx_expose_hook	officialsrcs/minilibx3/mlx_expose_hook.c	/^int		mlx_expose_hook(t_win_list *win,int (*funct)(),void *param)$/;"	f
 mlx_flush_event	officialsrcs/minilibx/mlx_flush_event.c	/^int	mlx_flush_event(t_xvar *xvar)$/;"	f
+mlx_flush_event	officialsrcs/minilibx3/mlx_flush_event.c	/^int	mlx_flush_event(t_xvar *xvar)$/;"	f
 mlx_get_color_value	officialsrcs/minilibx/mlx_get_color_value.c	/^int             mlx_get_color_value(t_xvar *xvar,int color)$/;"	f
+mlx_get_color_value	officialsrcs/minilibx3/mlx_get_color_value.c	/^int             mlx_get_color_value(t_xvar *xvar,int color)$/;"	f
 mlx_get_data_addr	officialsrcs/minilibx/mlx_get_data_addr.c	/^char	*mlx_get_data_addr(t_img *img,int *bits_per_pixel,$/;"	f
+mlx_get_data_addr	officialsrcs/minilibx3/mlx_get_data_addr.c	/^char	*mlx_get_data_addr(t_img *img,int *bits_per_pixel,$/;"	f
 mlx_hook	officialsrcs/minilibx/mlx_hook.c	/^int	mlx_hook(t_win_list *win, int x_event, int x_mask, $/;"	f
-mlx_img_ctx_s	minilibx/mlx_int.h	/^typedef struct	mlx_img_ctx_s$/;"	s
-mlx_img_ctx_t	minilibx/mlx_int.h	/^} mlx_img_ctx_t;$/;"	t	typeref:struct:mlx_img_ctx_s
-mlx_img_list_s	minilibx/mlx_int.h	/^typedef struct	mlx_img_list_s$/;"	s
-mlx_img_list_t	minilibx/mlx_int.h	/^} mlx_img_list_t;$/;"	t	typeref:struct:mlx_img_list_s
+mlx_hook	officialsrcs/minilibx3/mlx_hook.c	/^int	mlx_hook(t_win_list *win, int x_event, int x_mask, $/;"	f
 mlx_init	officialsrcs/minilibx/mlx_init.c	/^void		*mlx_init()$/;"	f
+mlx_init	officialsrcs/minilibx3/mlx_init.c	/^void		*mlx_init()$/;"	f
 mlx_int_anti_resize_win	officialsrcs/minilibx/mlx_int_anti_resize_win.c	/^int	mlx_int_anti_resize_win(t_xvar *xvar,Window win,int w,int h)$/;"	f
+mlx_int_anti_resize_win	officialsrcs/minilibx3/mlx_int_anti_resize_win.c	/^int	mlx_int_anti_resize_win(t_xvar *xvar,Window win,int w,int h)$/;"	f
 mlx_int_deal_shm	officialsrcs/minilibx/mlx_init.c	/^int	mlx_int_deal_shm(t_xvar *xvar)$/;"	f
+mlx_int_deal_shm	officialsrcs/minilibx3/mlx_init.c	/^int	mlx_int_deal_shm(t_xvar *xvar)$/;"	f
 mlx_int_do_nothing	officialsrcs/minilibx/mlx_int_do_nothing.c	/^int	mlx_int_do_nothing(void *param)$/;"	f
+mlx_int_do_nothing	officialsrcs/minilibx3/mlx_int_do_nothing.c	/^int	mlx_int_do_nothing(void *param)$/;"	f
 mlx_int_egal_img	officialsrcs/minilibx/mlx_lib_xpm.c	/^int	mlx_int_egal_img(XImage *img1,XImage *img2)$/;"	f
-mlx_int_file_get_rid_comment	minilibx/mlx_xpm.c	/^void	mlx_int_file_get_rid_comment(char *ptr, int size)$/;"	f
+mlx_int_egal_img	officialsrcs/minilibx3/mlx_lib_xpm.c	/^int	mlx_int_egal_img(XImage *img1,XImage *img2)$/;"	f
+mlx_int_file_get_rid_comment	mlx/mlx_xpm.c	/^void	mlx_int_file_get_rid_comment(char *ptr, int size)$/;"	f
 mlx_int_file_get_rid_comment	officialsrcs/minilibx/mlx_xpm.c	/^int	mlx_int_file_get_rid_comment(char *ptr, int size)$/;"	f
-mlx_int_get_col_name	minilibx/mlx_xpm.c	/^int	mlx_int_get_col_name(char *str,int size)$/;"	f
+mlx_int_file_get_rid_comment	officialsrcs/minilibx2/mlx_xpm.c	/^void	mlx_int_file_get_rid_comment(char *ptr, int size)$/;"	f
+mlx_int_file_get_rid_comment	officialsrcs/minilibx3/mlx_xpm.c	/^int	mlx_int_file_get_rid_comment(char *ptr, int size)$/;"	f
+mlx_int_fill	mlx/mlx_string_put.c	/^void mlx_int_fill(unsigned char *data, int sl)$/;"	f
+mlx_int_fill	officialsrcs/minilibx2/mlx_string_put.c	/^void mlx_int_fill(unsigned char *data, int sl)$/;"	f
+mlx_int_get_col_name	mlx/mlx_xpm.c	/^int	mlx_int_get_col_name(char *str,int size)$/;"	f
 mlx_int_get_col_name	officialsrcs/minilibx/mlx_xpm.c	/^int	mlx_int_get_col_name(char *str,int size)$/;"	f
+mlx_int_get_col_name	officialsrcs/minilibx2/mlx_xpm.c	/^int	mlx_int_get_col_name(char *str,int size)$/;"	f
+mlx_int_get_col_name	officialsrcs/minilibx3/mlx_xpm.c	/^int	mlx_int_get_col_name(char *str,int size)$/;"	f
 mlx_int_get_good_color	officialsrcs/minilibx/mlx_get_color_value.c	/^int		mlx_int_get_good_color(t_xvar *xvar,int color)$/;"	f
-mlx_int_get_line	minilibx/mlx_xpm.c	/^char	*mlx_int_get_line(char *ptr,int *pos,int size)$/;"	f
+mlx_int_get_good_color	officialsrcs/minilibx3/mlx_get_color_value.c	/^int		mlx_int_get_good_color(t_xvar *xvar,int color)$/;"	f
+mlx_int_get_line	mlx/mlx_xpm.c	/^char	*mlx_int_get_line(char *ptr,int *pos,int size)$/;"	f
 mlx_int_get_line	officialsrcs/minilibx/mlx_xpm.c	/^char	*mlx_int_get_line(char *ptr,int *pos,int size)$/;"	f
-mlx_int_get_text_rgb	minilibx/mlx_xpm.c	/^int	mlx_int_get_text_rgb(char *name, char *end)$/;"	f
+mlx_int_get_line	officialsrcs/minilibx2/mlx_xpm.c	/^char	*mlx_int_get_line(char *ptr,int *pos,int size)$/;"	f
+mlx_int_get_line	officialsrcs/minilibx3/mlx_xpm.c	/^char	*mlx_int_get_line(char *ptr,int *pos,int size)$/;"	f
+mlx_int_get_text_rgb	mlx/mlx_xpm.c	/^int	mlx_int_get_text_rgb(char *name, char *end)$/;"	f
 mlx_int_get_text_rgb	officialsrcs/minilibx/mlx_xpm.c	/^int	mlx_int_get_text_rgb(char *name, char *end)$/;"	f
+mlx_int_get_text_rgb	officialsrcs/minilibx2/mlx_xpm.c	/^int	mlx_int_get_text_rgb(char *name, char *end)$/;"	f
+mlx_int_get_text_rgb	officialsrcs/minilibx3/mlx_xpm.c	/^int	mlx_int_get_text_rgb(char *name, char *end)$/;"	f
 mlx_int_get_visual	officialsrcs/minilibx/mlx_int_get_visual.c	/^int		mlx_int_get_visual(t_xvar *xvar)$/;"	f
+mlx_int_get_visual	officialsrcs/minilibx3/mlx_int_get_visual.c	/^int		mlx_int_get_visual(t_xvar *xvar)$/;"	f
 mlx_int_new_image	officialsrcs/minilibx/mlx_new_image.c	/^void	*mlx_int_new_image(t_xvar *xvar,int width, int height,int format)$/;"	f
+mlx_int_new_image	officialsrcs/minilibx3/mlx_new_image.c	/^void	*mlx_int_new_image(t_xvar *xvar,int width, int height,int format)$/;"	f
 mlx_int_new_xshm_image	officialsrcs/minilibx/mlx_new_image.c	/^void	*mlx_int_new_xshm_image(t_xvar *xvar,int width,int height,int format)$/;"	f
+mlx_int_new_xshm_image	officialsrcs/minilibx3/mlx_new_image.c	/^void	*mlx_int_new_xshm_image(t_xvar *xvar,int width,int height,int format)$/;"	f
 mlx_int_param_ButtonPress	officialsrcs/minilibx/mlx_int_param_event.c	/^int	mlx_int_param_ButtonPress(t_xvar *xvar, XEvent *ev, t_win_list *win)$/;"	f
+mlx_int_param_ButtonPress	officialsrcs/minilibx3/mlx_int_param_event.c	/^int	mlx_int_param_ButtonPress(t_xvar *xvar, XEvent *ev, t_win_list *win)$/;"	f
 mlx_int_param_ButtonRelease	officialsrcs/minilibx/mlx_int_param_event.c	/^int	mlx_int_param_ButtonRelease(t_xvar *xvar, XEvent *ev, t_win_list *win)$/;"	f
+mlx_int_param_ButtonRelease	officialsrcs/minilibx3/mlx_int_param_event.c	/^int	mlx_int_param_ButtonRelease(t_xvar *xvar, XEvent *ev, t_win_list *win)$/;"	f
 mlx_int_param_Expose	officialsrcs/minilibx/mlx_int_param_event.c	/^int	mlx_int_param_Expose(t_xvar *xvar, XEvent *ev, t_win_list *win)$/;"	f
+mlx_int_param_Expose	officialsrcs/minilibx3/mlx_int_param_event.c	/^int	mlx_int_param_Expose(t_xvar *xvar, XEvent *ev, t_win_list *win)$/;"	f
 mlx_int_param_KeyPress	officialsrcs/minilibx/mlx_int_param_event.c	/^int	mlx_int_param_KeyPress(t_xvar *xvar, XEvent *ev, t_win_list *win)$/;"	f
+mlx_int_param_KeyPress	officialsrcs/minilibx3/mlx_int_param_event.c	/^int	mlx_int_param_KeyPress(t_xvar *xvar, XEvent *ev, t_win_list *win)$/;"	f
 mlx_int_param_KeyRelease	officialsrcs/minilibx/mlx_int_param_event.c	/^int	mlx_int_param_KeyRelease(t_xvar *xvar, XEvent *ev, t_win_list *win)$/;"	f
+mlx_int_param_KeyRelease	officialsrcs/minilibx3/mlx_int_param_event.c	/^int	mlx_int_param_KeyRelease(t_xvar *xvar, XEvent *ev, t_win_list *win)$/;"	f
 mlx_int_param_MotionNotify	officialsrcs/minilibx/mlx_int_param_event.c	/^int	mlx_int_param_MotionNotify(t_xvar *xvar, XEvent *ev, t_win_list *win)$/;"	f
+mlx_int_param_MotionNotify	officialsrcs/minilibx3/mlx_int_param_event.c	/^int	mlx_int_param_MotionNotify(t_xvar *xvar, XEvent *ev, t_win_list *win)$/;"	f
 mlx_int_param_event	officialsrcs/minilibx/mlx_int_param_event.c	/^int	(*(mlx_int_param_event[]))() =$/;"	v
+mlx_int_param_event	officialsrcs/minilibx3/mlx_int_param_event.c	/^int	(*(mlx_int_param_event[]))() =$/;"	v
 mlx_int_param_generic	officialsrcs/minilibx/mlx_int_param_event.c	/^int	mlx_int_param_generic(t_xvar *xvar, XEvent *ev, t_win_list *win)$/;"	f
+mlx_int_param_generic	officialsrcs/minilibx3/mlx_int_param_event.c	/^int	mlx_int_param_generic(t_xvar *xvar, XEvent *ev, t_win_list *win)$/;"	f
 mlx_int_param_undef	officialsrcs/minilibx/mlx_int_param_event.c	/^int	mlx_int_param_undef()$/;"	f
-mlx_int_parse_xpm	minilibx/mlx_xpm.c	/^void	*mlx_int_parse_xpm(mlx_ptr_t *xvar,void *info,int info_size,char *(*f)())$/;"	f
+mlx_int_param_undef	officialsrcs/minilibx3/mlx_int_param_event.c	/^int	mlx_int_param_undef()$/;"	f
+mlx_int_parse_png	mlx/mlx_png.c	/^void	*mlx_int_parse_png(void *xvar, unsigned char *fptr, int size, int *width, int *height)$/;"	f
+mlx_int_parse_png	officialsrcs/minilibx2/mlx_png.c	/^void	*mlx_int_parse_png(void *xvar, unsigned char *fptr, int size, int *width, int *height)$/;"	f
+mlx_int_parse_xpm	mlx/mlx_xpm.c	/^void	*mlx_int_parse_xpm(void *xvar,void *info,int info_size,char *(*f)(), int *width, int *height)$/;"	f
 mlx_int_parse_xpm	officialsrcs/minilibx/mlx_xpm.c	/^void	*mlx_int_parse_xpm(t_xvar *xvar,void *info,int info_size,char *(*f)())$/;"	f
+mlx_int_parse_xpm	officialsrcs/minilibx2/mlx_xpm.c	/^void	*mlx_int_parse_xpm(void *xvar,void *info,int info_size,char *(*f)(), int *width, int *height)$/;"	f
+mlx_int_parse_xpm	officialsrcs/minilibx3/mlx_xpm.c	/^void	*mlx_int_parse_xpm(t_xvar *xvar,void *info,int info_size,char *(*f)())$/;"	f
 mlx_int_rgb_conversion	officialsrcs/minilibx/mlx_init.c	/^int	mlx_int_rgb_conversion(t_xvar *xvar)$/;"	f
+mlx_int_rgb_conversion	officialsrcs/minilibx3/mlx_init.c	/^int	mlx_int_rgb_conversion(t_xvar *xvar)$/;"	f
 mlx_int_set_win_event_mask	officialsrcs/minilibx/mlx_int_set_win_event_mask.c	/^int	mlx_int_set_win_event_mask(t_xvar *xvar)$/;"	f
-mlx_int_static_line	minilibx/mlx_xpm.c	/^char	*mlx_int_static_line(char **xpm_data,int *pos,int size)$/;"	f
+mlx_int_set_win_event_mask	officialsrcs/minilibx3/mlx_int_set_win_event_mask.c	/^int	mlx_int_set_win_event_mask(t_xvar *xvar)$/;"	f
+mlx_int_static_line	mlx/mlx_xpm.c	/^char	*mlx_int_static_line(char **xpm_data,int *pos,int size)$/;"	f
 mlx_int_static_line	officialsrcs/minilibx/mlx_xpm.c	/^char	*mlx_int_static_line(char **xpm_data,int *pos,int size)$/;"	f
-mlx_int_str_str	minilibx/mlx_int_str_to_wordtab.c	/^int	mlx_int_str_str(char *str,char *find,int len)$/;"	f
+mlx_int_static_line	officialsrcs/minilibx2/mlx_xpm.c	/^char	*mlx_int_static_line(char **xpm_data,int *pos,int size)$/;"	f
+mlx_int_static_line	officialsrcs/minilibx3/mlx_xpm.c	/^char	*mlx_int_static_line(char **xpm_data,int *pos,int size)$/;"	f
+mlx_int_str_str	mlx/mlx_xpm.c	/^int	mlx_int_str_str(char *str,char *find,int len)$/;"	f
 mlx_int_str_str	officialsrcs/minilibx/mlx_int_str_to_wordtab.c	/^int	mlx_int_str_str(char *str,char *find,int len)$/;"	f
-mlx_int_str_str_cote	minilibx/mlx_int_str_to_wordtab.c	/^int	mlx_int_str_str_cote(char *str,char *find,int len)$/;"	f
+mlx_int_str_str	officialsrcs/minilibx2/mlx_xpm.c	/^int	mlx_int_str_str(char *str,char *find,int len)$/;"	f
+mlx_int_str_str	officialsrcs/minilibx3/mlx_int_str_to_wordtab.c	/^int	mlx_int_str_str(char *str,char *find,int len)$/;"	f
+mlx_int_str_str_cote	mlx/mlx_xpm.c	/^int	mlx_int_str_str_cote(char *str,char *find,int len)$/;"	f
 mlx_int_str_str_cote	officialsrcs/minilibx/mlx_int_str_to_wordtab.c	/^int	mlx_int_str_str_cote(char *str,char *find,int len)$/;"	f
-mlx_int_str_to_wordtab	minilibx/mlx_int_str_to_wordtab.c	/^char	**mlx_int_str_to_wordtab(char *str)$/;"	f
+mlx_int_str_str_cote	officialsrcs/minilibx2/mlx_xpm.c	/^int	mlx_int_str_str_cote(char *str,char *find,int len)$/;"	f
+mlx_int_str_str_cote	officialsrcs/minilibx3/mlx_int_str_to_wordtab.c	/^int	mlx_int_str_str_cote(char *str,char *find,int len)$/;"	f
+mlx_int_str_to_wordtab	mlx/mlx_xpm.c	/^char	**mlx_int_str_to_wordtab(char *str)$/;"	f
 mlx_int_str_to_wordtab	officialsrcs/minilibx/mlx_int_str_to_wordtab.c	/^char	**mlx_int_str_to_wordtab(char *str)$/;"	f
+mlx_int_str_to_wordtab	officialsrcs/minilibx2/mlx_xpm.c	/^char	**mlx_int_str_to_wordtab(char *str)$/;"	f
+mlx_int_str_to_wordtab	officialsrcs/minilibx3/mlx_int_str_to_wordtab.c	/^char	**mlx_int_str_to_wordtab(char *str)$/;"	f
 mlx_int_wait_first_expose	officialsrcs/minilibx/mlx_int_wait_first_expose.c	/^int	mlx_int_wait_first_expose(t_xvar *xvar,Window win)$/;"	f
+mlx_int_wait_first_expose	officialsrcs/minilibx3/mlx_int_wait_first_expose.c	/^int	mlx_int_wait_first_expose(t_xvar *xvar,Window win)$/;"	f
 mlx_int_xpm_f_image	officialsrcs/minilibx/mlx_lib_xpm.c	/^void		*mlx_int_xpm_f_image(t_xvar *xvar,int *width,int *height,$/;"	f
-mlx_int_xpm_set_pixel	minilibx/mlx_xpm.c	/^void	mlx_int_xpm_set_pixel(mlx_img_list_t *img, char *data, int opp, int col, int x)$/;"	f
+mlx_int_xpm_f_image	officialsrcs/minilibx3/mlx_lib_xpm.c	/^void		*mlx_int_xpm_f_image(t_xvar *xvar,int *width,int *height,$/;"	f
+mlx_int_xpm_set_pixel	mlx/mlx_xpm.c	/^void	mlx_int_xpm_set_pixel(char *data, int opp, int col, int x)$/;"	f
 mlx_int_xpm_set_pixel	officialsrcs/minilibx/mlx_xpm.c	/^int	mlx_int_xpm_set_pixel(t_img *img, char *data, int opp, int col, int x)$/;"	f
+mlx_int_xpm_set_pixel	officialsrcs/minilibx2/mlx_xpm.c	/^void	mlx_int_xpm_set_pixel(char *data, int opp, int col, int x)$/;"	f
+mlx_int_xpm_set_pixel	officialsrcs/minilibx3/mlx_xpm.c	/^int	mlx_int_xpm_set_pixel(t_img *img, char *data, int opp, int col, int x)$/;"	f
 mlx_key_hook	officialsrcs/minilibx/mlx_key_hook.c	/^int		mlx_key_hook(t_win_list *win,int (*funct)(),void *param)$/;"	f
+mlx_key_hook	officialsrcs/minilibx3/mlx_key_hook.c	/^int		mlx_key_hook(t_win_list *win,int (*funct)(),void *param)$/;"	f
 mlx_loop	officialsrcs/minilibx/mlx_loop.c	/^int		mlx_loop(t_xvar *xvar)$/;"	f
+mlx_loop	officialsrcs/minilibx3/mlx_loop.c	/^int		mlx_loop(t_xvar *xvar)$/;"	f
 mlx_loop_hook	officialsrcs/minilibx/mlx_loop_hook.c	/^int	mlx_loop_hook(t_xvar *xvar,int (*funct)(),void *param)$/;"	f
+mlx_loop_hook	officialsrcs/minilibx3/mlx_loop_hook.c	/^int	mlx_loop_hook(t_xvar *xvar,int (*funct)(),void *param)$/;"	f
 mlx_mouse_hook	officialsrcs/minilibx/mlx_mouse_hook.c	/^int		mlx_mouse_hook(t_win_list *win,int (*funct)(),void *param)$/;"	f
+mlx_mouse_hook	officialsrcs/minilibx3/mlx_mouse_hook.c	/^int		mlx_mouse_hook(t_win_list *win,int (*funct)(),void *param)$/;"	f
 mlx_new_image	officialsrcs/minilibx/mlx_new_image.c	/^void	*mlx_new_image(t_xvar *xvar,int width, int height)$/;"	f
+mlx_new_image	officialsrcs/minilibx3/mlx_new_image.c	/^void	*mlx_new_image(t_xvar *xvar,int width, int height)$/;"	f
 mlx_new_image2	officialsrcs/minilibx/mlx_new_image.c	/^void	*mlx_new_image2(t_xvar *xvar,int width, int height)$/;"	f
+mlx_new_image2	officialsrcs/minilibx3/mlx_new_image.c	/^void	*mlx_new_image2(t_xvar *xvar,int width, int height)$/;"	f
 mlx_new_window	officialsrcs/minilibx/mlx_new_window.c	/^void	*mlx_new_window(t_xvar *xvar,int size_x,int size_y,char *title)$/;"	f
+mlx_new_window	officialsrcs/minilibx3/mlx_new_window.c	/^void	*mlx_new_window(t_xvar *xvar,int size_x,int size_y,char *title)$/;"	f
 mlx_pixel_put	officialsrcs/minilibx/mlx_pixel_put.c	/^int		mlx_pixel_put(t_xvar *xvar,t_win_list *win,$/;"	f
-mlx_ptr_s	minilibx/mlx_int.h	/^typedef struct		mlx_ptr_s$/;"	s
-mlx_ptr_t	minilibx/mlx_int.h	/^} mlx_ptr_t;$/;"	t	typeref:struct:mlx_ptr_s
+mlx_pixel_put	officialsrcs/minilibx3/mlx_pixel_put.c	/^int		mlx_pixel_put(t_xvar *xvar,t_win_list *win,$/;"	f
+mlx_png_file_to_image	mlx/mlx_png.c	/^void	*mlx_png_file_to_image(void *xvar, char *file, int *width, int *height)$/;"	f
+mlx_png_file_to_image	officialsrcs/minilibx2/mlx_png.c	/^void	*mlx_png_file_to_image(void *xvar, char *file, int *width, int *height)$/;"	f
+mlx_ptr	includes/fdf.h	/^	void	*mlx_ptr;$/;"	m	struct:s_mlx
 mlx_put_image_to_window	officialsrcs/minilibx/mlx_put_image_to_window.c	/^int	mlx_put_image_to_window(t_xvar *xvar,t_win_list *win,t_img *img,$/;"	f
-mlx_shaders	minilibx/mlx_shaders.c	/^int mlx_shaders(glsl_info_t *glsl)$/;"	f
-mlx_shaders_font	minilibx/mlx_shaders.c	/^int mlx_shaders_font(glsl_info_t *glsl)$/;"	f
-mlx_shaders_image	minilibx/mlx_shaders.c	/^int mlx_shaders_image(glsl_info_t *glsl)$/;"	f
-mlx_shaders_pixel	minilibx/mlx_shaders.c	/^int mlx_shaders_pixel(glsl_info_t *glsl)$/;"	f
+mlx_put_image_to_window	officialsrcs/minilibx3/mlx_put_image_to_window.c	/^int	mlx_put_image_to_window(t_xvar *xvar,t_win_list *win,t_img *img,$/;"	f
+mlx_string_put	mlx/mlx_string_put.c	/^int mlx_string_put(void *mlx_ptr, void *win_ptr, int x, int y, int color, char *string)$/;"	f
 mlx_string_put	officialsrcs/minilibx/mlx_string_put.c	/^int		mlx_string_put(t_xvar *xvar,t_win_list *win,$/;"	f
-mlx_win_list_s	minilibx/mlx_int.h	/^typedef struct	mlx_win_list_s$/;"	s
-mlx_win_list_t	minilibx/mlx_int.h	/^} mlx_win_list_t;$/;"	t	typeref:struct:mlx_win_list_s
-mlx_xpm_file_to_image	minilibx/mlx_xpm.c	/^void	*mlx_xpm_file_to_image(mlx_ptr_t *xvar,char *file,int *width,int *height)$/;"	f
+mlx_string_put	officialsrcs/minilibx2/mlx_string_put.c	/^int mlx_string_put(void *mlx_ptr, void *win_ptr, int x, int y, int color, char *string)$/;"	f
+mlx_string_put	officialsrcs/minilibx3/mlx_string_put.c	/^int		mlx_string_put(t_xvar *xvar,t_win_list *win,$/;"	f
+mlx_xpm_file_to_image	mlx/mlx_xpm.c	/^void	*mlx_xpm_file_to_image(void *xvar,char *file,int *width,int *height)$/;"	f
 mlx_xpm_file_to_image	officialsrcs/minilibx/mlx_lib_xpm.c	/^void	*mlx_xpm_file_to_image(t_xvar *xvar,char *filename,$/;"	f
 mlx_xpm_file_to_image	officialsrcs/minilibx/mlx_xpm.c	/^void	*mlx_xpm_file_to_image(t_xvar *xvar,char *file,int *width,int *height)$/;"	f
-mlx_xpm_to_image	minilibx/mlx_xpm.c	/^void	*mlx_xpm_to_image(mlx_ptr_t *xvar,char **xpm_data,int *width,int *height)$/;"	f
+mlx_xpm_file_to_image	officialsrcs/minilibx2/mlx_xpm.c	/^void	*mlx_xpm_file_to_image(void *xvar,char *file,int *width,int *height)$/;"	f
+mlx_xpm_file_to_image	officialsrcs/minilibx3/mlx_lib_xpm.c	/^void	*mlx_xpm_file_to_image(t_xvar *xvar,char *filename,$/;"	f
+mlx_xpm_file_to_image	officialsrcs/minilibx3/mlx_xpm.c	/^void	*mlx_xpm_file_to_image(t_xvar *xvar,char *file,int *width,int *height)$/;"	f
+mlx_xpm_to_image	mlx/mlx_xpm.c	/^void	*mlx_xpm_to_image(void *xvar,char **xpm_data,int *width,int *height)$/;"	f
 mlx_xpm_to_image	officialsrcs/minilibx/mlx_lib_xpm.c	/^void	*mlx_xpm_to_image(t_xvar *xvar,char **data,int *width,int *height)$/;"	f
 mlx_xpm_to_image	officialsrcs/minilibx/mlx_xpm.c	/^void	*mlx_xpm_to_image(t_xvar *xvar,char **xpm_data,int *width,int *height)$/;"	f
+mlx_xpm_to_image	officialsrcs/minilibx2/mlx_xpm.c	/^void	*mlx_xpm_to_image(void *xvar,char **xpm_data,int *width,int *height)$/;"	f
+mlx_xpm_to_image	officialsrcs/minilibx3/mlx_lib_xpm.c	/^void	*mlx_xpm_to_image(t_xvar *xvar,char **data,int *width,int *height)$/;"	f
+mlx_xpm_to_image	officialsrcs/minilibx3/mlx_xpm.c	/^void	*mlx_xpm_to_image(t_xvar *xvar,char **xpm_data,int *width,int *height)$/;"	f
+mod_mlx	fdf_srcs/mlx_module/mod_mlx.c	/^void	mod_mlx(t_dlst **pixel_list)$/;"	f
 mouse_hook	officialsrcs/minilibx/mlx_int.h	/^  int			(*mouse_hook)();$/;"	m	struct:s_win_list
+mouse_hook	officialsrcs/minilibx3/mlx_int.h	/^  int			(*mouse_hook)();$/;"	m	struct:s_win_list
 mouse_param	officialsrcs/minilibx/mlx_int.h	/^  void			*mouse_param;$/;"	m	struct:s_win_list
+mouse_param	officialsrcs/minilibx3/mlx_int.h	/^  void			*mouse_param;$/;"	m	struct:s_win_list
 mouse_win1	officialsrcs/minilibx/test/main.c	/^int	mouse_win1(int button,int x,int y, void *p)$/;"	f
+mouse_win1	officialsrcs/minilibx3/test/main.c	/^int	mouse_win1(int button,int x,int y, void *p)$/;"	f
 mouse_win2	officialsrcs/minilibx/test/main.c	/^int	mouse_win2(int button,int x,int y, void *p)$/;"	f
+mouse_win2	officialsrcs/minilibx3/test/main.c	/^int	mouse_win2(int button,int x,int y, void *p)$/;"	f
 mouse_win3	officialsrcs/minilibx/test/main.c	/^int	mouse_win3(int x,int y, void *p)$/;"	f
-name	minilibx/mlx_xpm.c	/^  char  *name;$/;"	m	struct:s_col_name	file:
-name	minilibx/mlx_xpm.c	/^  int           name;$/;"	m	struct:s_xpm_col	file:
+mouse_win3	officialsrcs/minilibx3/test/main.c	/^int	mouse_win3(int x,int y, void *p)$/;"	f
+name	mlx/mlx_xpm.c	/^  char  *name;$/;"	m	struct:s_col_name	file:
+name	mlx/mlx_xpm.c	/^  int           name;$/;"	m	struct:s_xpm_col	file:
 name	officialsrcs/minilibx/mlx_int.h	/^  char	*name;$/;"	m	struct:s_col_name
 name	officialsrcs/minilibx/mlx_int.h	/^  int		name;$/;"	m	struct:s_xpm_col
-nb_flush	minilibx/mlx_int.h	/^  int			nb_flush;$/;"	m	struct:mlx_win_list_s
+name	officialsrcs/minilibx2/mlx_xpm.c	/^  char  *name;$/;"	m	struct:s_col_name	file:
+name	officialsrcs/minilibx2/mlx_xpm.c	/^  int           name;$/;"	m	struct:s_xpm_col	file:
+name	officialsrcs/minilibx3/mlx_int.h	/^  char	*name;$/;"	m	struct:s_col_name
+name	officialsrcs/minilibx3/mlx_int.h	/^  int		name;$/;"	m	struct:s_xpm_col
 next	libft/libft.h	/^	struct s_dlst	*next;$/;"	m	struct:s_dlst	typeref:struct:s_dlst::s_dlst
 next	libft/libft.h	/^	struct s_list	*next;$/;"	m	struct:s_list	typeref:struct:s_list::s_list
-next	minilibx/mlx_int.h	/^  struct mlx_img_ctx_s	*next;$/;"	m	struct:mlx_img_ctx_s	typeref:struct:mlx_img_ctx_s::mlx_img_ctx_s
-next	minilibx/mlx_int.h	/^  struct mlx_img_list_s	*next;$/;"	m	struct:mlx_img_list_s	typeref:struct:mlx_img_list_s::mlx_img_list_s
-next	minilibx/mlx_int.h	/^  struct mlx_win_list_s	*next;$/;"	m	struct:mlx_win_list_s	typeref:struct:mlx_win_list_s::mlx_win_list_s
 next	officialsrcs/minilibx/mlx_int.h	/^  struct s_win_list	*next;$/;"	m	struct:s_win_list	typeref:struct:s_win_list::s_win_list
+next	officialsrcs/minilibx3/mlx_int.h	/^  struct s_win_list	*next;$/;"	m	struct:s_win_list	typeref:struct:s_win_list::s_win_list
 param	officialsrcs/minilibx/mlx_int.h	/^  void		*param;$/;"	m	struct:s_event_list
+param	officialsrcs/minilibx3/mlx_int.h	/^  void		*param;$/;"	m	struct:s_event_list
 pix	officialsrcs/minilibx/mlx_int.h	/^  Pixmap	pix;$/;"	m	struct:s_img
-pixel_data	minilibx/font.c	/^  unsigned char	 pixel_data[1140 * 20 * 4 + 1];$/;"	m	struct:__anon1	file:
-pixel_fshader	minilibx/mlx_int.h	/^  GLuint	pixel_fshader;$/;"	m	struct:glsl_info_s
-pixel_program	minilibx/mlx_int.h	/^  GLuint	pixel_program;$/;"	m	struct:glsl_info_s
-pixel_vshader	minilibx/mlx_int.h	/^  GLuint	pixel_vshader;$/;"	m	struct:glsl_info_s
-pixmgt	minilibx/mlx_int.h	/^  int			pixmgt;$/;"	m	struct:mlx_win_list_s
+pix	officialsrcs/minilibx3/mlx_int.h	/^  Pixmap	pix;$/;"	m	struct:s_img
+pixel_color_parser	fdf_srcs/pixel_module/pixel_color_parser.c	/^int	pixel_color_parser(char *str)$/;"	f
+pixel_correction	fdf_srcs/pixel_module/pixel_correction.c	/^void	pixel_correction(t_dlst **pixel_list)$/;"	f
+pixel_data	mlx/font.c	/^  unsigned char	 pixel_data[1140 * 20 * 4 + 1];$/;"	m	struct:__anon2	file:
+pixel_data	officialsrcs/minilibx2/font.c	/^  unsigned char	 pixel_data[1140 * 20 * 4 + 1];$/;"	m	struct:__anon1	file:
+pixel_list	includes/fdf.h	/^	t_dlst	**pixel_list;$/;"	m	struct:s_mlx
+png_info_s	mlx/mlx_png.c	/^typedef struct png_info_s$/;"	s	file:
+png_info_s	officialsrcs/minilibx2/mlx_png.c	/^typedef struct png_info_s$/;"	s	file:
+png_info_t	mlx/mlx_png.c	/^} png_info_t;$/;"	t	typeref:struct:png_info_s	file:
+png_info_t	officialsrcs/minilibx2/mlx_png.c	/^} png_info_t;$/;"	t	typeref:struct:png_info_s	file:
 print_list_str	fdf_srcs/temp_tools/print_any.c	/^void	print_list_str(t_dlst *a)$/;"	f
+print_pixel_data	fdf_srcs/temp_tools/print_any.c	/^void	print_pixel_data(t_dlst *a)$/;"	f
 private_cmap	officialsrcs/minilibx/mlx_int.h	/^  int		private_cmap;$/;"	m	struct:s_xvar
+private_cmap	officialsrcs/minilibx3/mlx_int.h	/^  int		private_cmap;$/;"	m	struct:s_xvar
 pshm_format	officialsrcs/minilibx/mlx_int.h	/^  int		pshm_format;$/;"	m	struct:s_xvar
+pshm_format	officialsrcs/minilibx3/mlx_int.h	/^  int		pshm_format;$/;"	m	struct:s_xvar
 root	officialsrcs/minilibx/mlx_int.h	/^  Window	root;$/;"	m	struct:s_xvar
-s_col_name	minilibx/mlx_xpm.c	/^struct  s_col_name$/;"	s	file:
+root	officialsrcs/minilibx3/mlx_int.h	/^  Window	root;$/;"	m	struct:s_xvar
+s_col_name	mlx/mlx_xpm.c	/^struct  s_col_name$/;"	s	file:
 s_col_name	officialsrcs/minilibx/mlx_int.h	/^struct	s_col_name$/;"	s
+s_col_name	officialsrcs/minilibx2/mlx_xpm.c	/^struct  s_col_name$/;"	s	file:
+s_col_name	officialsrcs/minilibx3/mlx_int.h	/^struct	s_col_name$/;"	s
 s_dlst	libft/libft.h	/^typedef struct s_dlst$/;"	s
 s_event_list	officialsrcs/minilibx/mlx_int.h	/^typedef struct	s_event_list$/;"	s
+s_event_list	officialsrcs/minilibx3/mlx_int.h	/^typedef struct	s_event_list$/;"	s
 s_img	officialsrcs/minilibx/mlx_int.h	/^typedef struct	s_img$/;"	s
+s_img	officialsrcs/minilibx3/mlx_int.h	/^typedef struct	s_img$/;"	s
 s_list	libft/libft.h	/^typedef struct s_list$/;"	s
+s_mlx	includes/fdf.h	/^typedef struct	s_mlx$/;"	s
 s_pixel	includes/fdf.h	/^typedef	struct	s_pixel$/;"	s
 s_win_list	officialsrcs/minilibx/mlx_int.h	/^typedef struct	s_win_list$/;"	s
-s_window	includes/fdf.h	/^typedef struct	s_window$/;"	s
-s_xpm_col	minilibx/mlx_xpm.c	/^typedef struct  s_xpm_col$/;"	s	file:
+s_win_list	officialsrcs/minilibx3/mlx_int.h	/^typedef struct	s_win_list$/;"	s
+s_xpm_col	mlx/mlx_xpm.c	/^typedef struct  s_xpm_col$/;"	s	file:
 s_xpm_col	officialsrcs/minilibx/mlx_int.h	/^typedef	struct	s_xpm_col$/;"	s
+s_xpm_col	officialsrcs/minilibx2/mlx_xpm.c	/^typedef struct  s_xpm_col$/;"	s	file:
+s_xpm_col	officialsrcs/minilibx3/mlx_int.h	/^typedef	struct	s_xpm_col$/;"	s
 s_xvar	officialsrcs/minilibx/mlx_int.h	/^typedef struct	s_xvar$/;"	s
+s_xvar	officialsrcs/minilibx3/mlx_int.h	/^typedef struct	s_xvar$/;"	s
 screen	officialsrcs/minilibx/mlx_int.h	/^  int		screen;$/;"	m	struct:s_xvar
+screen	officialsrcs/minilibx3/mlx_int.h	/^  int		screen;$/;"	m	struct:s_xvar
+set_x_y_in_window	fdf_srcs/pixel_module/pixel_init.c	/^void	set_x_y_in_window(t_pixel *new)$/;"	f
 shm	officialsrcs/minilibx/mlx_int.h	/^  XShmSegmentInfo shm;$/;"	m	struct:s_img
+shm	officialsrcs/minilibx3/mlx_int.h	/^  XShmSegmentInfo shm;$/;"	m	struct:s_img
 shm_att_pb	officialsrcs/minilibx/mlx_new_image.c	/^int	shm_att_pb(Display *d,XErrorEvent *ev)$/;"	f
+shm_att_pb	officialsrcs/minilibx3/mlx_new_image.c	/^int	shm_att_pb(Display *d,XErrorEvent *ev)$/;"	f
 size_line	officialsrcs/minilibx/mlx_int.h	/^  int		size_line;$/;"	m	struct:s_img
+size_line	officialsrcs/minilibx3/mlx_int.h	/^  int		size_line;$/;"	m	struct:s_img
 sl1	officialsrcs/minilibx/test/main.c	/^int	sl1;$/;"	v
+sl1	officialsrcs/minilibx3/test/main.c	/^int	sl1;$/;"	v
 sl2	officialsrcs/minilibx/test/main.c	/^int	sl2;$/;"	v
+sl2	officialsrcs/minilibx3/test/main.c	/^int	sl2;$/;"	v
 sl3	officialsrcs/minilibx/test/main.c	/^int	sl3;$/;"	v
+sl3	officialsrcs/minilibx3/test/main.c	/^int	sl3;$/;"	v
 sl4	officialsrcs/minilibx/test/main.c	/^int	sl4;$/;"	v
-square_check_module	fdf_srcs/map_check_module/square_check_module.c	/^int	square_check_module(t_dlst *line_list)$/;"	f
+sl4	officialsrcs/minilibx3/test/main.c	/^int	sl4;$/;"	v
+square_check_module	fdf_srcs/map_check_module/square_check_module.c	/^void	square_check_module(t_dlst *line_list, t_dlst **origin)$/;"	f
 str_size	libft/ft_split_charset.c	/^int	str_size(char *str, char *charset)$/;"	f
 t_dlst	libft/libft.h	/^}	t_dlst;$/;"	t	typeref:struct:s_dlst
 t_event_list	officialsrcs/minilibx/mlx_int.h	/^} t_event_list;$/;"	t	typeref:struct:s_event_list
+t_event_list	officialsrcs/minilibx3/mlx_int.h	/^} t_event_list;$/;"	t	typeref:struct:s_event_list
 t_img	officialsrcs/minilibx/mlx_int.h	/^} t_img;$/;"	t	typeref:struct:s_img
+t_img	officialsrcs/minilibx3/mlx_int.h	/^} t_img;$/;"	t	typeref:struct:s_img
 t_list	libft/libft.h	/^}	t_list;$/;"	t	typeref:struct:s_list
+t_mlx	includes/fdf.h	/^} t_mlx;$/;"	t	typeref:struct:s_mlx
 t_pixel	includes/fdf.h	/^} t_pixel;$/;"	t	typeref:struct:s_pixel
 t_size	libft/libft.h	/^typedef unsigned long	t_size;$/;"	t
 t_win_list	officialsrcs/minilibx/mlx_int.h	/^} t_win_list;$/;"	t	typeref:struct:s_win_list
-t_window	includes/fdf.h	/^} t_window;$/;"	t	typeref:struct:s_window
-t_xpm_col	minilibx/mlx_xpm.c	/^} t_xpm_col;$/;"	t	typeref:struct:s_xpm_col	file:
+t_win_list	officialsrcs/minilibx3/mlx_int.h	/^} t_win_list;$/;"	t	typeref:struct:s_win_list
+t_xpm_col	mlx/mlx_xpm.c	/^} t_xpm_col;$/;"	t	typeref:struct:s_xpm_col	file:
 t_xpm_col	officialsrcs/minilibx/mlx_int.h	/^} t_xpm_col;$/;"	t	typeref:struct:s_xpm_col
+t_xpm_col	officialsrcs/minilibx2/mlx_xpm.c	/^} t_xpm_col;$/;"	t	typeref:struct:s_xpm_col	file:
+t_xpm_col	officialsrcs/minilibx3/mlx_int.h	/^} t_xpm_col;$/;"	t	typeref:struct:s_xpm_col
 t_xvar	officialsrcs/minilibx/mlx_int.h	/^} t_xvar;$/;"	t	typeref:struct:s_xvar
-texture	minilibx/mlx_int.h	/^  GLuint		texture;$/;"	m	struct:mlx_img_ctx_s
+t_xvar	officialsrcs/minilibx3/mlx_int.h	/^} t_xvar;$/;"	t	typeref:struct:s_xvar
 type	officialsrcs/minilibx/mlx_int.h	/^  int		type;$/;"	m	struct:s_img
+type	officialsrcs/minilibx3/mlx_int.h	/^  int		type;$/;"	m	struct:s_img
+under_incline	fdf_srcs/mlx_module/bresenham_pixel_put.c	/^static void	under_incline(int *start_x_y, int *dest_x_y, int *cline_x_y, t_mlx *mlx)$/;"	f	file:
+upper_incline	fdf_srcs/mlx_module/bresenham_pixel_put.c	/^static void	upper_incline(int *start, int *dest, int *cline, t_mlx *mlx)$/;"	f	file:
 use_xshm	officialsrcs/minilibx/mlx_int.h	/^  int		use_xshm;$/;"	m	struct:s_xvar
+use_xshm	officialsrcs/minilibx3/mlx_int.h	/^  int		use_xshm;$/;"	m	struct:s_xvar
 validate_file_extension	fdf_srcs/map_check_module/extension_check_module.c	/^static int	validate_file_extension(char *path)$/;"	f	file:
-vbuffer	minilibx/mlx_int.h	/^  GLuint		vbuffer;$/;"	m	struct:mlx_img_ctx_s
-vertexes	minilibx/mlx_int.h	/^  GLfloat		vertexes[8];$/;"	m	struct:mlx_img_list_s
 visual	officialsrcs/minilibx/mlx_int.h	/^  Visual	*visual;$/;"	m	struct:s_xvar
-width	minilibx/font.c	/^  unsigned int 	 width;$/;"	m	struct:__anon1	file:
-width	minilibx/mlx_int.h	/^  int			width;$/;"	m	struct:mlx_img_list_s
+visual	officialsrcs/minilibx3/mlx_int.h	/^  Visual	*visual;$/;"	m	struct:s_xvar
+width	mlx/font.c	/^  unsigned int 	 width;$/;"	m	struct:__anon2	file:
+width	mlx/mlx_png.c	/^  unsigned int	width;$/;"	m	struct:png_info_s	file:
 width	officialsrcs/minilibx/mlx_int.h	/^  int		width;$/;"	m	struct:s_img
+width	officialsrcs/minilibx2/font.c	/^  unsigned int 	 width;$/;"	m	struct:__anon1	file:
+width	officialsrcs/minilibx2/mlx_png.c	/^  unsigned int	width;$/;"	m	struct:png_info_s	file:
+width	officialsrcs/minilibx3/mlx_int.h	/^  int		width;$/;"	m	struct:s_img
 win1	officialsrcs/minilibx/test/main.c	/^void	*win1;$/;"	v
 win1	officialsrcs/minilibx/test/new_win.c	/^void *win1;$/;"	v
+win1	officialsrcs/minilibx3/test/main.c	/^void	*win1;$/;"	v
+win1	officialsrcs/minilibx3/test/new_win.c	/^void *win1;$/;"	v
 win2	officialsrcs/minilibx/test/main.c	/^void    *win2;$/;"	v
 win2	officialsrcs/minilibx/test/new_win.c	/^void *win2;$/;"	v
+win2	officialsrcs/minilibx3/test/main.c	/^void    *win2;$/;"	v
+win2	officialsrcs/minilibx3/test/new_win.c	/^void *win2;$/;"	v
 win3	officialsrcs/minilibx/test/main.c	/^void    *win3;$/;"	v
-win_list	minilibx/mlx_int.h	/^  mlx_win_list_t	*win_list;$/;"	m	struct:mlx_ptr_s
+win3	officialsrcs/minilibx3/test/main.c	/^void    *win3;$/;"	v
 win_list	officialsrcs/minilibx/mlx_int.h	/^  t_win_list	*win_list;$/;"	m	struct:s_xvar
+win_list	officialsrcs/minilibx3/mlx_int.h	/^  t_win_list	*win_list;$/;"	m	struct:s_xvar
+win_ptr	includes/fdf.h	/^	void	*win_ptr;$/;"	m	struct:s_mlx
 window	officialsrcs/minilibx/mlx_int.h	/^  Window		window;$/;"	m	struct:s_win_list
-winid	minilibx/mlx_int.h	/^  void			*winid;$/;"	m	struct:mlx_win_list_s
-x	includes/fdf.h	/^	int	x;  \/\/window x축 길이$/;"	m	struct:s_window
-x_in_window	includes/fdf.h	/^	int	x_in_window;$/;"	m	struct:s_pixel
+window	officialsrcs/minilibx3/mlx_int.h	/^  Window		window;$/;"	m	struct:s_win_list
+x_in_window	includes/fdf.h	/^	int		x_in_window;$/;"	m	struct:s_pixel
 xpm1_x	officialsrcs/minilibx/test/main.c	/^int	xpm1_x;$/;"	v
+xpm1_x	officialsrcs/minilibx3/test/main.c	/^int	xpm1_x;$/;"	v
 xpm1_y	officialsrcs/minilibx/test/main.c	/^int	xpm1_y;$/;"	v
-y	includes/fdf.h	/^	int	y;	\/\/window y축 길이$/;"	m	struct:s_window
-y_in_window	includes/fdf.h	/^	int	y_in_window;$/;"	m	struct:s_pixel
+xpm1_y	officialsrcs/minilibx3/test/main.c	/^int	xpm1_y;$/;"	v
+y_in_window	includes/fdf.h	/^	int		y_in_window;$/;"	m	struct:s_pixel
