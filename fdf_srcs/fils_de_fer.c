@@ -6,7 +6,7 @@
 /*   By: myukang <myukang@student.42.kr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/27 18:11:05 by myukang           #+#    #+#             */
-/*   Updated: 2022/05/01 21:17:29 by myukang          ###   ########.fr       */
+/*   Updated: 2022/05/03 15:18:38 by myukang          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,11 @@ void fils_de_fer(char *path)
 	square_check_module(line_list, &line_list);
 	init_pixel(line_list, &line_list, &pixel_list);
 	pixel_correction(&pixel_list);
+	printf("pixel correction\n");
+	print_pixel_data(pixel_list);
+	pixel_optimization(&pixel_list);
+	printf("pixel optimization\n");
+	print_pixel_data(pixel_list);
 	ft_dlst_clear(&line_list, free);
 	mod_mlx(&pixel_list);
 }

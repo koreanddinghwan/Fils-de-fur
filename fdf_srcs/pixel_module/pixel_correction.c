@@ -6,16 +6,16 @@
 /*   By: myukang <myukang@student.42.kr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/01 17:28:45 by myukang           #+#    #+#             */
-/*   Updated: 2022/05/02 14:01:43 by myukang          ###   ########.fr       */
+/*   Updated: 2022/05/03 15:17:05 by myukang          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "fdf.h"
 
-static int	get_min_x(t_dlst *pixel_list)
+static double	get_min_x(t_dlst *pixel_list)
 {
-	int	rtn;
-	int	x;
+	double	rtn;
+	double	x;
 
 	rtn = 0;
 	while (pixel_list)
@@ -28,10 +28,10 @@ static int	get_min_x(t_dlst *pixel_list)
 	return (rtn);
 }
 
-static int	get_min_y(t_dlst *pixel_list)
+static double	get_min_y(t_dlst *pixel_list)
 {
-	int	rtn;
-	int	y;
+	double	rtn;
+	double	y;
 
 	rtn = 0;
 	while (pixel_list)
@@ -44,17 +44,17 @@ static int	get_min_y(t_dlst *pixel_list)
 	return (rtn);
 }
 
-static void	correction(int min_x, int min_y, t_pixel *pixel)
+static void	correction(double min_x, double min_y, t_pixel *pixel)
 {
-	pixel->x_in_window += abs(min_x);
-	pixel->y_in_window += abs(min_y);
+	pixel->x_in_window += fabs(min_x);
+	pixel->y_in_window += fabs(min_y);
 }
 
 void	pixel_correction(t_dlst **pixel_list)
 {
-	int		min_x;
-	int		min_y;
-	t_dlst	*pixel_cur;
+	double		min_x;
+	double		min_y;
+	t_dlst		*pixel_cur;
 	
 	min_x = get_min_x(*pixel_list);
 	min_y = get_min_y(*pixel_list);

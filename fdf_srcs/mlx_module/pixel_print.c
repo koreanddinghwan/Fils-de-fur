@@ -6,7 +6,7 @@
 /*   By: myukang <myukang@student.42.kr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/02 14:45:20 by myukang           #+#    #+#             */
-/*   Updated: 2022/05/03 00:30:31 by myukang          ###   ########.fr       */
+/*   Updated: 2022/05/03 14:29:47 by myukang          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,15 +64,9 @@ void pixel_print(t_mlx *mlx)
 		right = find_right_pixel(cur, start);
 		down = find_down_pixel(cur, start);
 		if (right)
-		{
-			ft_printf("found right\n");
 			bresenham(start, right, mlx, right->color);
-		}
 		if (down)
-		{
-			ft_printf("found down\n");
 			bresenham(start, down, mlx, down->color);
-		}
 		cur = cur->next;
 	}
 }

@@ -6,7 +6,7 @@
 #    By: myukang <myukang@student.42.kr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/04/27 18:01:47 by myukang           #+#    #+#              #
-#    Updated: 2022/05/03 00:24:12 by myukang          ###   ########.fr        #
+#    Updated: 2022/05/03 15:11:54 by myukang          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -33,7 +33,7 @@ FDF_OBJS_O = $(FDF_SRCS:.c=.o)
 FDF_OBJS = $(addprefix $(FDF_DIR), $(FDF_OBJS_O))
 
 TOOLS_DIR = ./fdf_srcs/tools/
-TOOLS_SRCS = call_error.c free_split.c get_map_list.c cal_coordinate.c
+TOOLS_SRCS = call_error.c free_split.c get_map_list.c
 TOOLS_OBJS_O = $(TOOLS_SRCS:.c=.o)
 TOOLS_OBJS = $(addprefix $(TOOLS_DIR), $(TOOLS_OBJS_O))
 
@@ -48,7 +48,7 @@ MAP_CHECK_OBJS_O = $(MAP_CHECK_SRCS:.c=.o)
 MAP_CHECK_OBJS = $(addprefix $(MAP_CHECK_DIR), $(MAP_CHECK_OBJS_O))
 
 PIXEL_MOD_DIR = ./fdf_srcs/pixel_module/
-PIXEL_MOD_SRCS = pixel_init.c pixel_color_parser.c pixel_correction.c
+PIXEL_MOD_SRCS = pixel_init.c pixel_color_parser.c pixel_correction.c pixel_optimization.c
 PIXEL_MOD_OBJS_O = $(PIXEL_MOD_SRCS:.c=.o)
 PIXEL_MOD_OBJS = $(addprefix $(PIXEL_MOD_DIR), $(PIXEL_MOD_OBJS_O))
 

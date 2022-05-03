@@ -6,16 +6,32 @@
 /*   By: myukang <myukang@student.42.kr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/01 01:29:06 by myukang           #+#    #+#             */
-/*   Updated: 2022/05/02 14:24:05 by myukang          ###   ########.fr       */
+/*   Updated: 2022/05/03 15:27:04 by myukang          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../includes/fdf.h"
 
-void	set_x_y_in_window(t_pixel *new)
+static double	get_x(int x, int y, int angle)
+{
+	double	a;
+
+	a = tan(angle * M_PI / 180);
+	return (((x - y) * a));
+}
+
+static double	get_y(int x, int y, int z, int angle)
+{
+	double	a;
+
+	a = cos(angle * M_PI / 180) / sin(angle * M_PI / 180);
+	return ((a * (x + y) - z * a));
+}
+
+static void	set_x_y_in_window(t_pixel *new)
 {
 	new->x_in_window = get_x(new->map_x, new->map_y, 60);
-	new->y_in_window = get_y(new->map_x, new->map_y, new->map_z);
+	new->y_in_window = get_y(new->map_x, new->map_y, new->map_z, 60);
 }
 
 static int	add_pixel_to_list(char *str, t_dlst **pixel_list_addr, int x, int y)
@@ -31,10 +47,10 @@ static int	add_pixel_to_list(char *str, t_dlst **pixel_list_addr, int x, int y)
 	new->map_y = y;
 	new->map_z = ft_atoi(split_by_comma[0]);
 	set_x_y_in_window(new);
-	if (split_by_comma[1])
-		new->color = pixel_color_parser(split_by_comma[1]);
-	else
-		new->color = DEFAULT_COLOR;
+	//if (split_by_comma[1])
+	//	new->color = pixel_color_parser(split_by_comma[1]);
+	//else
+	new->color = DEFAULT_COLOR;
 	free_split(split_by_comma);
 	ft_dlst_pushback(pixel_list_addr, ft_dlst_new(new));  
 	return (1);

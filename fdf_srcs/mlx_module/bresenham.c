@@ -6,7 +6,7 @@
 /*   By: myukang <myukang@student.42.kr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/03 00:10:08 by myukang           #+#    #+#             */
-/*   Updated: 2022/05/03 00:25:24 by myukang          ###   ########.fr       */
+/*   Updated: 2022/05/03 15:21:54 by myukang          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,10 +20,10 @@ void	bresenham(t_pixel *start, t_pixel *end, t_mlx *mlx, int color)
 	int	dx;
 	int	dy;
 
-	dx = end->x_in_window - start->x_in_window;
-	dy = end->y_in_window - start->y_in_window;
-	int x = start->x_in_window;
-	int	y = start->y_in_window;
+	dx = end->x_printing_win - start->x_printing_win;
+	dy = end->y_printing_win - start->y_printing_win;
+	int x = start->x_printing_win;
+	int	y = start->y_printing_win;
 	int	i = 0;
 	if (dx < 0)
 	{

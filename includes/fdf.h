@@ -6,7 +6,7 @@
 /*   By: myukang <myukang@student.42.kr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/27 17:48:29 by myukang           #+#    #+#             */
-/*   Updated: 2022/05/03 00:24:52 by myukang          ###   ########.fr       */
+/*   Updated: 2022/05/03 15:11:42 by myukang          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,19 +21,19 @@
 #include <stdio.h>
 #include <math.h>
 
-# define	DEFAULT_WINDOW_X			300
-# define	DEFAULT_WINDOW_Y			300
 # define	DEFAULT_COLOR				0xFFFFFF
 # define	DEFAULT_Z_PIXEL_PER_LEN		10
 
 typedef	struct	s_pixel
 {
-	int		map_x;
-	int		map_y;
-	int		map_z;
-	int		x_in_window;
-	int		y_in_window;
-	int		color;
+	int			map_x;
+	int			map_y;
+	int			map_z;
+	double		x_in_window;
+	double		y_in_window;
+	int			x_printing_win;
+	int			y_printing_win;
+	int			color;
 } t_pixel;
 
 typedef struct	s_mlx
@@ -50,7 +50,7 @@ void	get_map_list(char	*path, t_dlst **line_list);
 void	init_pixel(t_dlst *line_list, t_dlst **line_list_addr, t_dlst **pixel_list_addr);
 int		pixel_color_parser(char *str);
 void	pixel_correction(t_dlst **pixel_list);
-
+void	pixel_optimization(t_dlst **pixel_list);
 //mlx_mod
 void	mod_mlx(t_dlst **pixel_list);
 void	open_window(t_mlx *mlx);
@@ -60,8 +60,6 @@ void	bresenham(t_pixel *start, t_pixel *end, t_mlx *mlx, int color);
 void	call_error_free_list(char *str, t_dlst **pixel_list);
 void	call_error(char	*str);
 void	free_split(char **splited);
-double	get_x(int x, int y, int angle);
-int	get_y(int x, int y, int z);
 //map_check_module
 int		extension_check_module(char *path);
 void	square_check_module(t_dlst *line_list, t_dlst **origin);
