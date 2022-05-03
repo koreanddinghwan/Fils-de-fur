@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   extension_check_module.c                               :+:      :+:    :+:   */
+/*   extension_check_module.c                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: myukang <myukang@student.42.kr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/04/27 20:50:27 by myukang           #+#    #+#             */
-/*   Updated: 2022/04/30 20:50:36 by myukang          ###   ########.fr       */
+/*   Created: 2022/05/03 20:55:30 by myukang           #+#    #+#             */
+/*   Updated: 2022/05/03 20:56:12 by myukang          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../includes/fdf.h"
+#include "fdf.h"
 
 static int	validate_file_extension(char *path)
 {
@@ -34,6 +34,7 @@ static int	validate_file_extension(char *path)
 int	extension_check_module(char *path)
 {
 	if (!validate_file_extension(path))
-		call_error("that map file is not a fdf map\nplease insert valid map file\n");
+		call_error(
+			"that map file is not a fdf map\nplease insert valid map file\n");
 	return (1);
 }

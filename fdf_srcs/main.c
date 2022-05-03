@@ -6,13 +6,13 @@
 /*   By: myukang <myukang@student.42.kr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/27 17:50:11 by myukang           #+#    #+#             */
-/*   Updated: 2022/05/02 17:36:20 by myukang          ###   ########.fr       */
+/*   Updated: 2022/05/03 20:55:13 by myukang          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/fdf.h"
+#include "fdf.h"
 
-int main(int ac, char **av)
+int	main(int ac, char **av)
 {
 	if (ac != 2)
 		call_error("please insert map name\n./fdf [mapfile.fdf]\n");

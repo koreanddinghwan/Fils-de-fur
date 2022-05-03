@@ -141,7 +141,7 @@ OPEN_MAX	includes/get_next_line.h	/^# define OPEN_MAX /;"	d
 PIXEL_MOD_DIR	Makefile	/^PIXEL_MOD_DIR = .\/fdf_srcs\/pixel_module\/$/;"	m
 PIXEL_MOD_OBJS	Makefile	/^PIXEL_MOD_OBJS = $(addprefix $(PIXEL_MOD_DIR), $(PIXEL_MOD_OBJS_O))$/;"	m
 PIXEL_MOD_OBJS_O	Makefile	/^PIXEL_MOD_OBJS_O = $(PIXEL_MOD_SRCS:.c=.o)$/;"	m
-PIXEL_MOD_SRCS	Makefile	/^PIXEL_MOD_SRCS = pixel_init.c pixel_color_parser.c pixel_correction.c$/;"	m
+PIXEL_MOD_SRCS	Makefile	/^PIXEL_MOD_SRCS = pixel_init.c pixel_color_parser.c pixel_correction.c pixel_optimization.c$/;"	m
 PNG_HDR_SIZE	mlx/mlx_png.c	/^#define PNG_HDR_SIZE	/;"	d	file:
 PNG_HDR_SIZE	officialsrcs/minilibx2/mlx_png.c	/^#define PNG_HDR_SIZE	/;"	d	file:
 PNG_MAGIC_SIZE	mlx/mlx_png.c	/^#define	PNG_MAGIC_SIZE	/;"	d	file:
@@ -354,8 +354,8 @@ gere_mouse	officialsrcs/minilibx/test/new_win.c	/^int gere_mouse(int x,int y,int
 gere_mouse	officialsrcs/minilibx3/test/new_win.c	/^int gere_mouse(int x,int y,int button,void*toto)$/;"	f
 get_index	fdf_srcs/pixel_module/pixel_color_parser.c	/^static int	get_index(char c)$/;"	f	file:
 get_map_list	fdf_srcs/tools/get_map_list.c	/^void	get_map_list(char	*path, t_dlst **line_list)$/;"	f
-get_max_x	fdf_srcs/mlx_module/open_window.c	/^static int	get_max_x(t_dlst *pixel_list)$/;"	f	file:
-get_max_y	fdf_srcs/mlx_module/open_window.c	/^static int	get_max_y(t_dlst *pixel_list)$/;"	f	file:
+get_max_x	fdf_srcs/mlx_module/open_window.c	/^int	get_max_x(t_dlst *pixel_list)$/;"	f
+get_max_y	fdf_srcs/mlx_module/open_window.c	/^int	get_max_y(t_dlst *pixel_list)$/;"	f
 get_min_x	fdf_srcs/pixel_module/pixel_correction.c	/^static double	get_min_x(t_dlst *pixel_list)$/;"	f	file:
 get_min_y	fdf_srcs/pixel_module/pixel_correction.c	/^static double	get_min_y(t_dlst *pixel_list)$/;"	f	file:
 get_next_line	gnl/get_next_line.c	/^char	*get_next_line(int fd)$/;"	f
@@ -633,6 +633,7 @@ pixel_correction	fdf_srcs/pixel_module/pixel_correction.c	/^void	pixel_correctio
 pixel_data	mlx/font.c	/^  unsigned char	 pixel_data[1140 * 20 * 4 + 1];$/;"	m	struct:__anon1	file:
 pixel_data	officialsrcs/minilibx2/font.c	/^  unsigned char	 pixel_data[1140 * 20 * 4 + 1];$/;"	m	struct:__anon2	file:
 pixel_list	includes/fdf.h	/^	t_dlst	**pixel_list;$/;"	m	struct:s_mlx
+pixel_optimization	fdf_srcs/pixel_module/pixel_optimization.c	/^void	pixel_optimization(t_dlst **pixel_list)$/;"	f
 pixel_print	fdf_srcs/mlx_module/pixel_print.c	/^void pixel_print(t_mlx *mlx)$/;"	f
 png_info_s	mlx/mlx_png.c	/^typedef struct png_info_s$/;"	s	file:
 png_info_s	officialsrcs/minilibx2/mlx_png.c	/^typedef struct png_info_s$/;"	s	file:
@@ -731,8 +732,10 @@ win_ptr	includes/fdf.h	/^	void	*win_ptr;$/;"	m	struct:s_mlx
 window	officialsrcs/minilibx/mlx_int.h	/^  Window		window;$/;"	m	struct:s_win_list
 window	officialsrcs/minilibx3/mlx_int.h	/^  Window		window;$/;"	m	struct:s_win_list
 x_in_window	includes/fdf.h	/^	double		x_in_window;$/;"	m	struct:s_pixel
+x_printing_win	includes/fdf.h	/^	int			x_printing_win;$/;"	m	struct:s_pixel
 xpm1_x	officialsrcs/minilibx/test/main.c	/^int	xpm1_x;$/;"	v
 xpm1_x	officialsrcs/minilibx3/test/main.c	/^int	xpm1_x;$/;"	v
 xpm1_y	officialsrcs/minilibx/test/main.c	/^int	xpm1_y;$/;"	v
 xpm1_y	officialsrcs/minilibx3/test/main.c	/^int	xpm1_y;$/;"	v
 y_in_window	includes/fdf.h	/^	double		y_in_window;$/;"	m	struct:s_pixel
+y_printing_win	includes/fdf.h	/^	int			y_printing_win;$/;"	m	struct:s_pixel

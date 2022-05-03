@@ -6,7 +6,7 @@
 #    By: myukang <myukang@student.42.kr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/04/27 18:01:47 by myukang           #+#    #+#              #
-#    Updated: 2022/05/03 15:11:54 by myukang          ###   ########.fr        #
+#    Updated: 2022/05/03 20:50:24 by myukang          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -43,7 +43,7 @@ T_TOOLS_OBJS_O = $(T_TOOLS_SRCS:.c=.o)
 T_TOOLS_OBJS = $(addprefix $(T_TOOLS_DIR), $(T_TOOLS_OBJS_O))
 
 MAP_CHECK_DIR = ./fdf_srcs/map_check_module/
-MAP_CHECK_SRCS = extension_check_module.c square_check_module.c
+MAP_CHECK_SRCS = extension_check_module.c 
 MAP_CHECK_OBJS_O = $(MAP_CHECK_SRCS:.c=.o)
 MAP_CHECK_OBJS = $(addprefix $(MAP_CHECK_DIR), $(MAP_CHECK_OBJS_O))
 

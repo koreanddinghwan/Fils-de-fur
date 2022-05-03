@@ -6,46 +6,41 @@
 /*   By: myukang <myukang@student.42.kr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/01 02:00:28 by myukang           #+#    #+#             */
-/*   Updated: 2022/05/01 18:15:03 by myukang          ###   ########.fr       */
+/*   Updated: 2022/05/03 19:42:36 by myukang          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../includes/fdf.h"
 
-static int	get_index(char c)
+static int	get_index(char c, char *small, char *cap)
 {
-	char	*cap;
-	char	*small;
 	int		i;
 
-	small = "0123456789abcdef";
-	cap = "0123456789ABCDEF";
 	i = 0;
-	if (c >= 65 && c <= 90)
+	while (cap[i])
 	{
-		while (cap[i])
-		{
-			if (c == cap[i++])
-				return (i);
-		}
+		if (c == cap[i])
+			return (i);
+		i++;
 	}
-	else
+	i = 0;
+	while (small[i])
 	{
-		while (small[i])
-		{
-			if (c == small[i++])
-				return (i);
-		}
+		if (c == small[i])
+			return (i);
+		i++;
 	}
 	return (0);
 }
 
 static int	find_hex_str(char c)
 {
-	if (c >= 48 && c <= 57)
-		return (c - 48);
-	else
-		return (get_index(c));
+	char	*cap;
+	char	*small;
+
+	small = "0123456789abcdef";
+	cap = "0123456789ABCDEF";
+	return (get_index(c, small, cap));
 }
 
 static int	convert_hex_ascii(char *str)
@@ -53,7 +48,7 @@ static int	convert_hex_ascii(char *str)
 	int		rtn;
 
 	rtn = 0;
-	while (!ft_isspace(*str) && *str)
+	while (*str)
 	{
 		rtn = 16 * rtn + find_hex_str(*str);
 		str++;
