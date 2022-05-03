@@ -6,7 +6,7 @@
 /*   By: myukang <myukang@student.42.kr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/01 17:28:45 by myukang           #+#    #+#             */
-/*   Updated: 2022/05/03 15:17:05 by myukang          ###   ########.fr       */
+/*   Updated: 2022/05/03 20:59:55 by myukang          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,10 +52,10 @@ static void	correction(double min_x, double min_y, t_pixel *pixel)
 
 void	pixel_correction(t_dlst **pixel_list)
 {
-	double		min_x;
-	double		min_y;
-	t_dlst		*pixel_cur;
-	
+	double	min_x;
+	double	min_y;
+	t_dlst	*pixel_cur;
+
 	min_x = get_min_x(*pixel_list);
 	min_y = get_min_y(*pixel_list);
 	pixel_cur = *pixel_list;

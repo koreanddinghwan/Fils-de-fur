@@ -6,15 +6,15 @@
 #    By: myukang <myukang@student.42.kr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/04/27 18:01:47 by myukang           #+#    #+#              #
-#    Updated: 2022/05/03 20:50:24 by myukang          ###   ########.fr        #
+#    Updated: 2022/05/03 21:10:15 by myukang          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = fdf
-CFLAGS = -Wall -Wextra -Werror -c -g -fsanitize=address
-GFLAGS = -I. -Lmlx -framework Metal -framework Metalkit
+DEBUG = -g -fsanitize=address
+CFLAGS = -Wall -Wextra -Werror -c 
+GFLAGS = -I. -framework Metal -framework Metalkit
 GCC = gcc
-ARCH = arch -x86_64
 INC = ./includes/
 
 LIBFT_DIR = ./libft/
@@ -37,11 +37,6 @@ TOOLS_SRCS = call_error.c free_split.c get_map_list.c
 TOOLS_OBJS_O = $(TOOLS_SRCS:.c=.o)
 TOOLS_OBJS = $(addprefix $(TOOLS_DIR), $(TOOLS_OBJS_O))
 
-T_TOOLS_DIR = ./fdf_srcs/temp_tools/
-T_TOOLS_SRCS = print_any.c
-T_TOOLS_OBJS_O = $(T_TOOLS_SRCS:.c=.o)
-T_TOOLS_OBJS = $(addprefix $(T_TOOLS_DIR), $(T_TOOLS_OBJS_O))
-
 MAP_CHECK_DIR = ./fdf_srcs/map_check_module/
 MAP_CHECK_SRCS = extension_check_module.c 
 MAP_CHECK_OBJS_O = $(MAP_CHECK_SRCS:.c=.o)
@@ -57,7 +52,7 @@ MLX_MOD_SRCS = mod_mlx.c open_window.c pixel_print.c bresenham.c
 MLX_MOD_OBJS_O = $(MLX_MOD_SRCS:.c=.o)
 MLX_MOD_OBJS = $(addprefix $(MLX_MOD_DIR), $(MLX_MOD_OBJS_O))
 
-OBJ_FILES = $(FDF_OBJS) $(GNL_OBJS) $(TOOLS_OBJS) $(T_TOOLS_OBJS) $(MAP_CHECK_OBJS) $(PIXEL_MOD_OBJS) $(MLX_MOD_OBJS)
+OBJ_FILES = $(FDF_OBJS) $(GNL_OBJS) $(TOOLS_OBJS) $(MAP_CHECK_OBJS) $(PIXEL_MOD_OBJS) $(MLX_MOD_OBJS)
 
 all : $(NAME)
 
@@ -66,7 +61,7 @@ $(NAME) : $(OBJ_FILES)
 	make all -C $(MLX_DIR)
 	mv $(LIBFT_DIR)$(LIBFT) $(LIBFT)
 	mv $(MLX_DIR)$(MLX) $(MLX)
-	$(GCC) -Wall -Wextra -Werror -g -fsanitize=address -o $@ $^ $(MLX) $(LIBFT) $(GFLAGS)
+	$(GCC) -Wall -Wextra -Werror -o $@ $^ $(MLX) $(LIBFT) $(GFLAGS)
 
 %.o : %.c
 	$(GCC) $(CFLAGS) -I$(INC) $< -o $@
@@ -75,7 +70,7 @@ fclean : clean
 	rm -f $(NAME)
 
 clean :
-	make fclean -C $(LIBFT_DIR)
+	make clean -C $(LIBFT_DIR)
 	make clean -C $(MLX_DIR)
 	rm -f $(OBJ_FILES) $(LIBFT) $(MLX)
 

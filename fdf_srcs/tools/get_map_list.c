@@ -6,17 +6,17 @@
 /*   By: myukang <myukang@student.42.kr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/28 04:37:56 by myukang           #+#    #+#             */
-/*   Updated: 2022/04/30 20:48:54 by myukang          ###   ########.fr       */
+/*   Updated: 2022/05/03 21:02:12 by myukang          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../includes/fdf.h"
+#include "fdf.h"
 
 void	get_map_list(char	*path, t_dlst **line_list)
 {
 	int		fd;
 	char	*line;
-	
+
 	fd = open(path, O_RDONLY);
 	if (fd == -1)
 	{

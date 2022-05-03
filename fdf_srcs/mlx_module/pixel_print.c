@@ -6,7 +6,7 @@
 /*   By: myukang <myukang@student.42.kr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/02 14:45:20 by myukang           #+#    #+#             */
-/*   Updated: 2022/05/03 17:06:48 by myukang          ###   ########.fr       */
+/*   Updated: 2022/05/03 20:59:29 by myukang          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,8 @@ static t_pixel	*find_right_pixel(t_dlst *cur, t_pixel *start)
 	next = cur->next;
 	if (!next)
 		return (0);
-	if ((map_x + 1 == ((t_pixel *)next->content)->map_x) && (map_y == ((t_pixel *)next->content)->map_y))
+	if ((map_x + 1 == ((t_pixel *)next->content)->map_x)
+		&& (map_y == ((t_pixel *)next->content)->map_y))
 		return ((t_pixel *)next->content);
 	else
 		return (0);
@@ -50,7 +51,7 @@ static t_pixel	*find_down_pixel(t_dlst *cur, t_pixel *start)
 	return (0);
 }
 
-void pixel_print(t_mlx *mlx)
+void	pixel_print(t_mlx *mlx)
 {
 	t_dlst	*cur;
 	t_pixel	*start;

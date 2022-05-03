@@ -6,14 +6,14 @@
 /*   By: myukang <myukang@student.42.kr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/23 23:37:30 by myukang           #+#    #+#             */
-/*   Updated: 2022/04/27 17:30:23 by myukang          ###   ########.fr       */
+/*   Updated: 2022/05/03 21:05:10 by myukang          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef GET_NEXT_LINE_H
 # define GET_NEXT_LINE_H
 
-#include "../libft/libft.h"
+# include "../libft/libft.h"
 
 # define OPEN_MAX 256
 # ifndef BUFFER_SIZE

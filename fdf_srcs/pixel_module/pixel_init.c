@@ -6,7 +6,7 @@
 /*   By: myukang <myukang@student.42.kr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/01 01:29:06 by myukang           #+#    #+#             */
-/*   Updated: 2022/05/03 19:23:37 by myukang          ###   ########.fr       */
+/*   Updated: 2022/05/03 21:00:27 by myukang          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,11 +52,12 @@ static int	add_pixel_to_list(char *str, t_dlst **pixel_list_addr, int x, int y)
 	else
 		new->color = DEFAULT_COLOR;
 	free_split(split_by_comma);
-	ft_dlst_pushback(pixel_list_addr, ft_dlst_new(new));  
+	ft_dlst_pushback(pixel_list_addr, ft_dlst_new(new));
 	return (1);
 }
 
-void	init_pixel(t_dlst *line_list, t_dlst **line_list_addr, t_dlst **pixel_list_addr)
+void	init_pixel(t_dlst *line_list,
+		t_dlst **line_list_addr, t_dlst **pixel_list_addr)
 {
 	int		x;
 	int		y;

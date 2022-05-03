@@ -6,25 +6,25 @@
 /*   By: myukang <myukang@student.42.kr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/27 17:48:29 by myukang           #+#    #+#             */
-/*   Updated: 2022/05/03 20:50:12 by myukang          ###   ########.fr       */
+/*   Updated: 2022/05/03 21:07:16 by myukang          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FDF_H
 # define FDF_H
 
-#include "./get_next_line.h"
-#include "../mlx/mlx.h"
-#include <fcntl.h>
-#include <errno.h>
-#include <string.h>
-#include <stdio.h>
-#include <math.h>
+# include "./get_next_line.h"
+# include "../mlx/mlx.h"
+# include <fcntl.h>
+# include <errno.h>
+# include <string.h>
+# include <stdio.h>
+# include <math.h>
 
-# define	DEFAULT_COLOR				0xFFFFFF
-# define	DEFAULT_Z_PIXEL_PER_LEN		7
+# define DEFAULT_COLOR 0xFFFFFF
+# define DEFAULT_Z_PIXEL_PER_LEN 7
 
-typedef	struct	s_pixel
+typedef struct s_pixel
 {
 	int			map_x;
 	int			map_y;
@@ -34,16 +34,16 @@ typedef	struct	s_pixel
 	int			x_printing_win;
 	int			y_printing_win;
 	int			color;
-} t_pixel;
+}	t_pixel;
 
-typedef struct	s_mlx
+typedef struct s_mlx
 {
 	void	*mlx_ptr;
 	void	*win_ptr;
 	t_dlst	**pixel_list;
-} t_mlx;
+}	t_mlx;
 
-typedef struct	s_bresen
+typedef struct s_bresen
 {
 	int	addx;
 	int	addy;
@@ -51,29 +51,21 @@ typedef struct	s_bresen
 	int	dy;
 	int	x;
 	int	y;
-} t_bresen;
+}	t_bresen;
 
 void	fils_de_fer(char *av);
 void	get_map_list(char	*path, t_dlst **line_list);
-
-//pixel_module
-void	init_pixel(t_dlst *line_list, t_dlst **line_list_addr, t_dlst **pixel_list_addr);
+void	init_pixel(t_dlst *line_list,
+			t_dlst **line_list_addr, t_dlst **pixel_list_addr);
 int		pixel_color_parser(char *str);
 void	pixel_correction(t_dlst **pixel_list);
 void	pixel_optimization(t_dlst **pixel_list);
-//mlx_mod
 void	mod_mlx(t_dlst **pixel_list);
 void	open_window(t_mlx *mlx);
 void	pixel_print(t_mlx *mlx);
 void	bresenham(t_pixel *start, t_pixel *end, t_mlx *mlx, int color);
-//tools
 void	call_error_free_list(char *str, t_dlst **pixel_list);
 void	call_error(char	*str);
 void	free_split(char **splited);
-//map_check_module
 int		extension_check_module(char *path);
-//print_any
-void	print_list_str(t_dlst *a);
-void	print_pixel_data(t_dlst *a);
-
 #endif

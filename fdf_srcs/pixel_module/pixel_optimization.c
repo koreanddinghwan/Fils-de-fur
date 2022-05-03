@@ -6,18 +6,18 @@
 /*   By: myukang <myukang@student.42.kr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/03 14:57:45 by myukang           #+#    #+#             */
-/*   Updated: 2022/05/03 20:31:58 by myukang          ###   ########.fr       */
+/*   Updated: 2022/05/03 21:01:10 by myukang          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "fdf.h"
 
-static void	set_printing_cor(t_dlst	**cur_pixel_list, t_dlst **pixel_list, t_pixel *cur_pixel, int z_set[2])
+static void	set_printing_cor(t_dlst	**cur_pixel_list,
+		t_dlst **pixel_list, t_pixel *cur_pixel, int z_set[2])
 {
-	
-	int		calculed_x;
-	int		calculed_y;
-	
+	int	calculed_x;
+	int	calculed_y;
+
 	cur_pixel = (t_pixel *)((*cur_pixel_list)->content);
 	calculed_x = cur_pixel->x_in_window * z_set[0];
 	calculed_y = cur_pixel->y_in_window * z_set[1];
@@ -59,4 +59,4 @@ void	pixel_optimization(t_dlst **pixel_list)
 			break ;
 		}
 	}
-} 
+}
