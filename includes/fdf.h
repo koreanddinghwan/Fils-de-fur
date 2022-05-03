@@ -6,7 +6,7 @@
 /*   By: myukang <myukang@student.42.kr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/27 17:48:29 by myukang           #+#    #+#             */
-/*   Updated: 2022/05/02 20:10:27 by myukang          ###   ########.fr       */
+/*   Updated: 2022/05/03 00:24:52 by myukang          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,8 +55,7 @@ void	pixel_correction(t_dlst **pixel_list);
 void	mod_mlx(t_dlst **pixel_list);
 void	open_window(t_mlx *mlx);
 void	pixel_print(t_mlx *mlx);
-void	bresenham_pixel_put_pos(t_pixel *p1, t_pixel *p2, t_mlx *mlx, int color);
-void	bresenham_pixel_put_neg(t_pixel *p1, t_pixel *p2, t_mlx *mlx, int color);
+void	bresenham(t_pixel *start, t_pixel *end, t_mlx *mlx, int color);
 //tools
 void	call_error_free_list(char *str, t_dlst **pixel_list);
 void	call_error(char	*str);

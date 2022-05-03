@@ -6,7 +6,7 @@
 #    By: myukang <myukang@student.42.kr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/04/27 18:01:47 by myukang           #+#    #+#              #
-#    Updated: 2022/05/02 18:22:40 by myukang          ###   ########.fr        #
+#    Updated: 2022/05/03 00:24:12 by myukang          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -53,7 +53,7 @@ PIXEL_MOD_OBJS_O = $(PIXEL_MOD_SRCS:.c=.o)
 PIXEL_MOD_OBJS = $(addprefix $(PIXEL_MOD_DIR), $(PIXEL_MOD_OBJS_O))
 
 MLX_MOD_DIR = ./fdf_srcs/mlx_module/
-MLX_MOD_SRCS = mod_mlx.c open_window.c pixel_print.c bresenham_pixel_put_pos.c bresenham_pixel_put_neg.c
+MLX_MOD_SRCS = mod_mlx.c open_window.c pixel_print.c bresenham.c 
 MLX_MOD_OBJS_O = $(MLX_MOD_SRCS:.c=.o)
 MLX_MOD_OBJS = $(addprefix $(MLX_MOD_DIR), $(MLX_MOD_OBJS_O))
 
